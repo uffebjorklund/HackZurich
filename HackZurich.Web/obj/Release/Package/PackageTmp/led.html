@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Hack Zürich - LED</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        #circle {
+            border-radius: 50%;
+            display: inline-block;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            background: #808080;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Hack Zürich - <small id="serverid"></small></h2>
+
+    <div class="container">        
+        <div class="row">
+            <div class="col-xs-12">               
+                <button onclick="toggle()">Toggle</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>Led-State</h3>
+                <div id="circle" class="unknown">
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <footer>
+            <p class="pull-right">
+                Coding4Fun
+            </p>
+        </footer>
+    </div> <!-- /container -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/XSockets.latest.js"></script>
+    <script>
+        var prod = 'hackzurich.cloudapp.net:8080'
+        var dev = 'localhost:4502';
+        var ws = new XSockets.WebSocket('ws://' + prod, ['led']);
+        var led = ws.controller('led');
+
+        var ledState = false;
+
+        ws.onconnected = function () {
+            console.log('connected');
+        }
+        led.onopen = function () {
+            console.log('led controller open');
+        };        
+
+        led.on('state', function (state) {
+            console.log('led: ', state);
+            ledState = state;
+            if (state) {
+                document.querySelector('#circle').style.background = "green";
+            }
+            else
+                document.querySelector('#circle').style.background = "red";
+        });
+
+        var toggle = function () {            
+            console.log('set to ', !ledState);            
+            led.invoke('state', !ledState);
+        };
+    </script>
+
+</body>
+</html>

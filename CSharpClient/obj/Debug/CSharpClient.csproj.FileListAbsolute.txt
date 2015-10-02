@@ -1,0 +1,8 @@
+C:\Users\uffe\Desktop\HackZurich\CSharpClient\bin\Debug\CSharpClient.exe.config
+C:\Users\uffe\Desktop\HackZurich\CSharpClient\bin\Debug\CSharpClient.exe
+C:\Users\uffe\Desktop\HackZurich\CSharpClient\bin\Debug\CSharpClient.pdb
+C:\Users\uffe\Desktop\HackZurich\CSharpClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\uffe\Desktop\HackZurich\CSharpClient\bin\Debug\XSockets.Client40.dll
+C:\Users\uffe\Desktop\HackZurich\CSharpClient\obj\Debug\CSharpClient.csprojResolveAssemblyReference.cache
+C:\Users\uffe\Desktop\HackZurich\CSharpClient\obj\Debug\CSharpClient.exe
+C:\Users\uffe\Desktop\HackZurich\CSharpClient\obj\Debug\CSharpClient.pdb

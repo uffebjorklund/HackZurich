@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "HackZurichWeb"
+  },
+  "hostingPlanName": {
+    "value": "Default1"
+  },
+  "siteLocation": {
+    "value": "North Europe"
+  },
+  "sku": {
+    "value": "Standard"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "c2434b04-2ec2-4736-b09c-35f05c77a5e7"
+  },
+  "resourceGroup": {
+    "value": "Default-Web-NorthEurope"
+  }
+}

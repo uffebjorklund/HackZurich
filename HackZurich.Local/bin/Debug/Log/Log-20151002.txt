@@ -1,0 +1,488 @@
+﻿2015-10-02 09:46:29.701 +02:00 [Information] License Information: LicenseTerms { LicenseType: Evaluation, Scaling: True, ConnectionLimit: -1, StartDate: 09/20/2015 19:38:52, EndDate: 10/04/2015 19:38:52, OwnerName: "MBA-WIN8\uffe", Corporate: "N/A", Address: "N/A", PostalCode: "N/A", City: "N/A", Country: "N/A", ProductName: null, Id: b3546bb9-3a4d-4ec9-a57c-b4d6a088ec17, IsValid: True }
+2015-10-02 09:46:29.742 +02:00 [Warning] The XSockets.NET Evaluation license will let the server run for 1 days per start, but will have all features enabled
+2015-10-02 09:46:29.745 +02:00 [Information] Get a free developer license at "http://xsockets.net/"
+2015-10-02 09:46:29.750 +02:00 [Warning] Server will shut down in 0 days 23:59:59
+2015-10-02 09:46:29.756 +02:00 [Information] Server starting at 10/02/2015 09:46:29 with interceptors True
+2015-10-02 09:46:29.783 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "10.41.51.212", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-10-02 09:46:29.787 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-10-02 09:46:29.792 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "10.41.51.212", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-10-02 09:46:29.799 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-10-02 09:46:39.746 +02:00 [Verbose] ProtocolHandshakeHandler - Reading Handshake
+2015-10-02 09:46:39.767 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Identified "Rfc6455Protocol"
+2015-10-02 09:46:39.776 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Resolved
+2015-10-02 09:46:39.785 +02:00 [Verbose] ProtocolHandshakeHandler - Handshake OK!
+2015-10-02 09:46:39.796 +02:00 [Debug] Azure ServiceBus Scaling - INIT
+2015-10-02 09:46:40.293 +02:00 [Debug] Getting Topic for Azure Service Bus
+2015-10-02 09:46:41.590 +02:00 [Debug] Creating Subscription for Azure Service Bus
+2015-10-02 09:46:42.372 +02:00 [Debug] Azure ServiceBus Scaling - SUBSCRIBE
+2015-10-02 09:46:42.384 +02:00 [Verbose] New Connection { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:46:42.396 +02:00 [Verbose] Authenticaiton pipeline, GetPrincipal
+2015-10-02 09:46:42.402 +02:00 [Verbose] Start reading from socket
+2015-10-02 09:46:42.405 +02:00 [Verbose] Reading from socket
+2015-10-02 09:46:42.419 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:46:42.563 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{\\"init\\":true}\",\"C\":\"led\",\"T\":\"1\"}"
+2015-10-02 09:46:42.588 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{\"init\":true}", MessageType: Text, Controller: "led", Topic: "1" }
+2015-10-02 09:46:42.608 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "{\"CI\":\"6ed18601-507d-4465-9059-9f4bec441f71\",\"PI\":\"9cb24f28-d8d1-41f4-bb62-308978567097\",\"C\":\"led\"}", MessageType: Text, Controller: "led", Topic: "2" }
+2015-10-02 09:46:42.621 +02:00 [Verbose] Controller open "led" for context { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:46:42.635 +02:00 [Verbose] Reading from socket
+2015-10-02 09:46:43.981 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:46:43.984 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"true\",\"C\":\"led\",\"T\":\"state\"}"
+2015-10-02 09:46:43.987 +02:00 [Debug] VerifyController Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 09:46:43.998 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 09:46:44.029 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"true\",\"C\":\"led\",\"T\":\"state\"}"
+2015-10-02 09:46:44.033 +02:00 [Verbose] Reading from socket
+2015-10-02 09:46:46.025 +02:00 [Verbose] Frame Ready, type: Close
+2015-10-02 09:46:46.056 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "{\"CI\":\"6ed18601-507d-4465-9059-9f4bec441f71\",\"PI\":\"9cb24f28-d8d1-41f4-bb62-308978567097\",\"C\":\"led\"}", MessageType: Text, Controller: "led", Topic: "3" }
+2015-10-02 09:46:46.064 +02:00 [Verbose] Controller closed "led" for context { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:46:46.081 +02:00 [Verbose] Connection closed { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:46:46.094 +02:00 [Verbose] Reading from socket
+2015-10-02 09:46:46.442 +02:00 [Verbose] ProtocolHandshakeHandler - Reading Handshake
+2015-10-02 09:46:46.445 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Identified "Rfc6455Protocol"
+2015-10-02 09:46:46.447 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Resolved
+2015-10-02 09:46:46.454 +02:00 [Verbose] ProtocolHandshakeHandler - Handshake OK!
+2015-10-02 09:46:46.457 +02:00 [Debug] Azure ServiceBus Scaling - INIT
+2015-10-02 09:46:46.520 +02:00 [Debug] Getting Topic for Azure Service Bus
+2015-10-02 09:46:46.656 +02:00 [Debug] Delete old subscription for Azure Service Bus
+2015-10-02 09:46:46.745 +02:00 [Debug] Creating Subscription for Azure Service Bus
+2015-10-02 09:46:47.042 +02:00 [Debug] Azure ServiceBus Scaling - SUBSCRIBE
+2015-10-02 09:46:47.051 +02:00 [Verbose] New Connection { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:46:47.079 +02:00 [Verbose] Authenticaiton pipeline, GetPrincipal
+2015-10-02 09:46:47.085 +02:00 [Verbose] Start reading from socket
+2015-10-02 09:46:47.089 +02:00 [Verbose] Reading from socket
+2015-10-02 09:46:47.093 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:46:47.096 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{\\"init\\":true}\",\"C\":\"led\",\"T\":\"1\"}"
+2015-10-02 09:46:47.100 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{\"init\":true}", MessageType: Text, Controller: "led", Topic: "1" }
+2015-10-02 09:46:47.108 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "{\"CI\":\"97aa5edc-ec07-48e9-aeab-a8362888e30b\",\"PI\":\"9cb24f28-d8d1-41f4-bb62-308978567097\",\"C\":\"led\"}", MessageType: Text, Controller: "led", Topic: "2" }
+2015-10-02 09:46:47.171 +02:00 [Verbose] Controller open "led" for context { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:46:47.260 +02:00 [Verbose] Reading from socket
+2015-10-02 09:46:48.221 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:46:48.224 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"true\",\"C\":\"led\",\"T\":\"state\"}"
+2015-10-02 09:46:48.230 +02:00 [Debug] VerifyController Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 09:46:48.239 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 09:46:48.249 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"true\",\"C\":\"led\",\"T\":\"state\"}"
+2015-10-02 09:46:48.257 +02:00 [Verbose] Reading from socket
+2015-10-02 09:47:06.304 +02:00 [Verbose] Frame Ready, type: Close
+2015-10-02 09:47:06.307 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "{\"CI\":\"97aa5edc-ec07-48e9-aeab-a8362888e30b\",\"PI\":\"9cb24f28-d8d1-41f4-bb62-308978567097\",\"C\":\"led\"}", MessageType: Text, Controller: "led", Topic: "3" }
+2015-10-02 09:47:06.312 +02:00 [Verbose] Controller closed "led" for context { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:47:06.328 +02:00 [Verbose] Connection closed { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:47:06.342 +02:00 [Verbose] Reading from socket
+2015-10-02 09:47:06.695 +02:00 [Verbose] ProtocolHandshakeHandler - Reading Handshake
+2015-10-02 09:47:06.702 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Identified "Rfc6455Protocol"
+2015-10-02 09:47:06.712 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Resolved
+2015-10-02 09:47:06.721 +02:00 [Verbose] ProtocolHandshakeHandler - Handshake OK!
+2015-10-02 09:47:06.731 +02:00 [Debug] Azure ServiceBus Scaling - INIT
+2015-10-02 09:47:06.803 +02:00 [Debug] Getting Topic for Azure Service Bus
+2015-10-02 09:47:06.939 +02:00 [Debug] Delete old subscription for Azure Service Bus
+2015-10-02 09:47:07.020 +02:00 [Debug] Creating Subscription for Azure Service Bus
+2015-10-02 09:47:07.433 +02:00 [Debug] Azure ServiceBus Scaling - SUBSCRIBE
+2015-10-02 09:47:07.490 +02:00 [Verbose] New Connection { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:47:07.616 +02:00 [Verbose] Authenticaiton pipeline, GetPrincipal
+2015-10-02 09:47:07.618 +02:00 [Verbose] Start reading from socket
+2015-10-02 09:47:07.621 +02:00 [Verbose] Reading from socket
+2015-10-02 09:47:07.624 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:47:07.627 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{\\"init\\":true}\",\"C\":\"led\",\"T\":\"1\"}"
+2015-10-02 09:47:07.630 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{\"init\":true}", MessageType: Text, Controller: "led", Topic: "1" }
+2015-10-02 09:47:07.633 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "{\"CI\":\"7abe0ee9-f9d7-457c-9e7f-ac752fa945a4\",\"PI\":\"9cb24f28-d8d1-41f4-bb62-308978567097\",\"C\":\"led\"}", MessageType: Text, Controller: "led", Topic: "2" }
+2015-10-02 09:47:07.639 +02:00 [Verbose] Controller open "led" for context { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:47:07.651 +02:00 [Verbose] Reading from socket
+2015-10-02 09:47:19.162 +02:00 [Verbose] ProtocolHandshakeHandler - Reading Handshake
+2015-10-02 09:47:21.185 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Identified "PuttyProtocol"
+2015-10-02 09:47:21.193 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Resolved
+2015-10-02 09:47:21.200 +02:00 [Verbose] ProtocolHandshakeHandler - Handshake OK!
+2015-10-02 09:47:21.207 +02:00 [Debug] Azure ServiceBus Scaling - INIT
+2015-10-02 09:47:21.273 +02:00 [Debug] Getting Topic for Azure Service Bus
+2015-10-02 09:47:21.412 +02:00 [Debug] Delete old subscription for Azure Service Bus
+2015-10-02 09:47:21.500 +02:00 [Debug] Creating Subscription for Azure Service Bus
+2015-10-02 09:47:21.880 +02:00 [Debug] Azure ServiceBus Scaling - SUBSCRIBE
+2015-10-02 09:47:21.929 +02:00 [Verbose] New Connection { User: null, CookieCollection: [], Headers: [], IsAuthenticated: False, IsSecureConnection: False, Origin: null, PersistentId: 001a3f5a-3524-4c42-8129-17eaab0ff6cb, QueryString: [], RawHandshake: null, Reconnecting: False, RequestUri: ws://127.0.0.1/PuttyProtocol }
+2015-10-02 09:47:22.024 +02:00 [Verbose] Authenticaiton pipeline, GetPrincipal
+2015-10-02 09:47:22.027 +02:00 [Verbose] Start reading from socket
+2015-10-02 09:47:22.029 +02:00 [Verbose] Reading from socket
+2015-10-02 09:47:32.883 +02:00 [Verbose] Reading from socket
+2015-10-02 09:47:32.887 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:47:32.895 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"\\"\\"\",\"C\":\"photon\",\"T\":\"1\"}"
+2015-10-02 09:47:32.899 +02:00 [Debug] VerifyController Message { Blob: null, Data: "\"\"", MessageType: Text, Controller: "photon", Topic: "1" }
+2015-10-02 09:47:32.903 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "{\"CI\":\"f489fdf6-88af-4db1-b926-5dbc1052e2c8\",\"PI\":\"001a3f5a-3524-4c42-8129-17eaab0ff6cb\",\"C\":\"photon\"}", MessageType: Text, Controller: "photon", Topic: "2" }
+2015-10-02 09:47:32.990 +02:00 [Verbose] Controller open "photon" for context { User: null, CookieCollection: [], Headers: [], IsAuthenticated: False, IsSecureConnection: False, Origin: null, PersistentId: 001a3f5a-3524-4c42-8129-17eaab0ff6cb, QueryString: [], RawHandshake: null, Reconnecting: False, RequestUri: ws://127.0.0.1/PuttyProtocol }
+2015-10-02 09:47:33.004 +02:00 [Verbose] Reading from socket
+2015-10-02 09:47:35.147 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:47:35.151 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"true\",\"C\":\"led\",\"T\":\"state\"}"
+2015-10-02 09:47:35.157 +02:00 [Debug] VerifyController Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 09:47:35.166 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 09:47:35.174 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"true\",\"C\":\"led\",\"T\":\"state\"}"
+2015-10-02 09:47:35.175 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "true", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 09:47:35.180 +02:00 [Verbose] Reading from socket
+2015-10-02 09:47:43.097 +02:00 [Verbose] Reading from socket
+2015-10-02 09:47:43.104 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:47:43.110 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"\\"true\\"\",\"C\":\"photon\",\"T\":\"state\"}"
+2015-10-02 09:47:43.118 +02:00 [Debug] VerifyController Message { Blob: null, Data: "\"true\"", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 09:47:43.128 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "\"true\"", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 09:47:43.140 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"\\"true\\"\",\"C\":\"photon\",\"T\":\"state\"}"
+2015-10-02 09:47:43.141 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 09:47:43.144 +02:00 [Verbose] Reading from socket
+2015-10-02 09:48:04.765 +02:00 [Verbose] Frame Ready, type: Close
+2015-10-02 09:48:04.767 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "{\"CI\":\"7abe0ee9-f9d7-457c-9e7f-ac752fa945a4\",\"PI\":\"9cb24f28-d8d1-41f4-bb62-308978567097\",\"C\":\"led\"}", MessageType: Text, Controller: "led", Topic: "3" }
+2015-10-02 09:48:04.775 +02:00 [Verbose] Controller closed "led" for context { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:48:04.790 +02:00 [Verbose] Connection closed { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:48:04.798 +02:00 [Verbose] Reading from socket
+2015-10-02 09:48:05.154 +02:00 [Verbose] ProtocolHandshakeHandler - Reading Handshake
+2015-10-02 09:48:05.163 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Identified "Rfc6455Protocol"
+2015-10-02 09:48:05.176 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Resolved
+2015-10-02 09:48:05.182 +02:00 [Verbose] ProtocolHandshakeHandler - Handshake OK!
+2015-10-02 09:48:05.189 +02:00 [Debug] Azure ServiceBus Scaling - INIT
+2015-10-02 09:48:05.257 +02:00 [Debug] Getting Topic for Azure Service Bus
+2015-10-02 09:48:05.398 +02:00 [Debug] Delete old subscription for Azure Service Bus
+2015-10-02 09:48:05.489 +02:00 [Debug] Creating Subscription for Azure Service Bus
+2015-10-02 09:48:05.868 +02:00 [Debug] Azure ServiceBus Scaling - SUBSCRIBE
+2015-10-02 09:48:05.893 +02:00 [Verbose] New Connection { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:48:06.065 +02:00 [Verbose] Authenticaiton pipeline, GetPrincipal
+2015-10-02 09:48:06.097 +02:00 [Verbose] Start reading from socket
+2015-10-02 09:48:06.123 +02:00 [Verbose] Reading from socket
+2015-10-02 09:48:06.161 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:48:06.191 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{\\"init\\":true}\",\"C\":\"led\",\"T\":\"1\"}"
+2015-10-02 09:48:06.219 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{\"init\":true}", MessageType: Text, Controller: "led", Topic: "1" }
+2015-10-02 09:48:06.246 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "{\"CI\":\"cea07282-9ba2-4a39-b843-5efd00b01eb6\",\"PI\":\"9cb24f28-d8d1-41f4-bb62-308978567097\",\"C\":\"led\"}", MessageType: Text, Controller: "led", Topic: "2" }
+2015-10-02 09:48:06.251 +02:00 [Verbose] Controller open "led" for context { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:48:06.259 +02:00 [Verbose] Reading from socket
+2015-10-02 09:48:07.466 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:48:07.469 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"true\",\"C\":\"led\",\"T\":\"state\"}"
+2015-10-02 09:48:07.473 +02:00 [Debug] VerifyController Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 09:48:07.478 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 09:48:07.487 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"true\",\"C\":\"led\",\"T\":\"state\"}"
+2015-10-02 09:48:07.487 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "true", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 09:48:07.511 +02:00 [Verbose] Reading from socket
+2015-10-02 09:48:16.169 +02:00 [Verbose] Reading from socket
+2015-10-02 09:48:16.171 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:48:16.173 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"\\"true\\"\",\"C\":\"photon\",\"T\":\"state\"}"
+2015-10-02 09:48:16.180 +02:00 [Debug] VerifyController Message { Blob: null, Data: "\"true\"", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 09:48:16.190 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "\"true\"", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 09:48:16.199 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"\\"true\\"\",\"C\":\"photon\",\"T\":\"state\"}"
+2015-10-02 09:48:16.199 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 09:48:16.203 +02:00 [Verbose] Reading from socket
+2015-10-02 09:48:18.405 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:48:18.408 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"false\",\"C\":\"led\",\"T\":\"state\"}"
+2015-10-02 09:48:18.412 +02:00 [Debug] VerifyController Message { Blob: null, Data: "false", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 09:48:18.417 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "false", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 09:48:18.427 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"false\",\"C\":\"led\",\"T\":\"state\"}"
+2015-10-02 09:48:18.428 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "false", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 09:48:18.456 +02:00 [Verbose] Reading from socket
+2015-10-02 09:48:25.881 +02:00 [Verbose] Reading from socket
+2015-10-02 09:48:25.883 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:48:25.886 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"\\"false\\"\",\"C\":\"photon\",\"T\":\"state\"}"
+2015-10-02 09:48:25.888 +02:00 [Debug] VerifyController Message { Blob: null, Data: "\"false\"", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 09:48:25.893 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "\"false\"", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 09:48:25.900 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"\\"false\\"\",\"C\":\"photon\",\"T\":\"state\"}"
+2015-10-02 09:48:25.900 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "false", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 09:48:25.903 +02:00 [Verbose] Reading from socket
+2015-10-02 09:48:30.835 +02:00 [Verbose] Controller closed "photon" for context { User: null, CookieCollection: [], Headers: [], IsAuthenticated: False, IsSecureConnection: False, Origin: null, PersistentId: 001a3f5a-3524-4c42-8129-17eaab0ff6cb, QueryString: [], RawHandshake: null, Reconnecting: False, RequestUri: ws://127.0.0.1/PuttyProtocol }
+2015-10-02 09:48:30.844 +02:00 [Verbose] Connection closed { User: null, CookieCollection: [], Headers: [], IsAuthenticated: False, IsSecureConnection: False, Origin: null, PersistentId: 001a3f5a-3524-4c42-8129-17eaab0ff6cb, QueryString: [], RawHandshake: null, Reconnecting: True, RequestUri: ws://127.0.0.1/PuttyProtocol }
+2015-10-02 09:53:29.888 +02:00 [Information] License Information: LicenseTerms { LicenseType: Evaluation, Scaling: True, ConnectionLimit: -1, StartDate: 09/20/2015 19:38:52, EndDate: 10/04/2015 19:38:52, OwnerName: "MBA-WIN8\uffe", Corporate: "N/A", Address: "N/A", PostalCode: "N/A", City: "N/A", Country: "N/A", ProductName: null, Id: c884f4b2-56d8-4a78-8438-9ee6c7417ccf, IsValid: True }
+2015-10-02 09:53:29.927 +02:00 [Warning] The XSockets.NET Evaluation license will let the server run for 1 days per start, but will have all features enabled
+2015-10-02 09:53:29.929 +02:00 [Information] Get a free developer license at "http://xsockets.net/"
+2015-10-02 09:53:29.932 +02:00 [Warning] Server will shut down in 0 days 23:59:59
+2015-10-02 09:53:30.259 +02:00 [Information] Server starting at 10/02/2015 09:53:30 with interceptors True
+2015-10-02 09:53:30.291 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "10.41.51.212", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-10-02 09:53:30.296 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-10-02 09:53:30.302 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "10.41.51.212", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-10-02 09:53:30.310 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-10-02 09:53:35.632 +02:00 [Verbose] ProtocolHandshakeHandler - Reading Handshake
+2015-10-02 09:53:37.390 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Identified "PuttyProtocol"
+2015-10-02 09:53:37.398 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Resolved
+2015-10-02 09:53:37.400 +02:00 [Verbose] ProtocolHandshakeHandler - Handshake OK!
+2015-10-02 09:53:37.411 +02:00 [Debug] Azure ServiceBus Scaling - INIT
+2015-10-02 09:53:38.274 +02:00 [Debug] Getting Topic for Azure Service Bus
+2015-10-02 09:53:39.471 +02:00 [Debug] Creating Subscription for Azure Service Bus
+2015-10-02 09:53:40.209 +02:00 [Debug] Azure ServiceBus Scaling - SUBSCRIBE
+2015-10-02 09:53:40.219 +02:00 [Verbose] New Connection { User: null, CookieCollection: [], Headers: [], IsAuthenticated: False, IsSecureConnection: False, Origin: null, PersistentId: 3172fb39-7af8-472d-b1b9-dbe642b03dfa, QueryString: [], RawHandshake: null, Reconnecting: False, RequestUri: ws://127.0.0.1/PuttyProtocol }
+2015-10-02 09:53:40.227 +02:00 [Verbose] Authenticaiton pipeline, GetPrincipal
+2015-10-02 09:53:40.234 +02:00 [Verbose] Start reading from socket
+2015-10-02 09:53:40.236 +02:00 [Verbose] Reading from socket
+2015-10-02 09:53:45.057 +02:00 [Verbose] Reading from socket
+2015-10-02 09:53:45.071 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:53:45.145 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"\\"\\"\",\"C\":\"photon\",\"T\":\"1\"}"
+2015-10-02 09:53:45.192 +02:00 [Debug] VerifyController Message { Blob: null, Data: "\"\"", MessageType: Text, Controller: "photon", Topic: "1" }
+2015-10-02 09:53:45.212 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "{\"CI\":\"eafc5869-2c63-4d91-82cc-1e2a9e66b826\",\"PI\":\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\",\"C\":\"photon\"}", MessageType: Text, Controller: "photon", Topic: "2" }
+2015-10-02 09:53:45.325 +02:00 [Verbose] Controller open "photon" for context { User: null, CookieCollection: [], Headers: [], IsAuthenticated: False, IsSecureConnection: False, Origin: null, PersistentId: 3172fb39-7af8-472d-b1b9-dbe642b03dfa, QueryString: [], RawHandshake: null, Reconnecting: False, RequestUri: ws://127.0.0.1/PuttyProtocol }
+2015-10-02 09:53:45.340 +02:00 [Verbose] Reading from socket
+2015-10-02 09:53:59.642 +02:00 [Verbose] ProtocolHandshakeHandler - Reading Handshake
+2015-10-02 09:53:59.656 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Identified "Rfc6455Protocol"
+2015-10-02 09:53:59.662 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Resolved
+2015-10-02 09:53:59.668 +02:00 [Verbose] ProtocolHandshakeHandler - Handshake OK!
+2015-10-02 09:53:59.672 +02:00 [Debug] Azure ServiceBus Scaling - INIT
+2015-10-02 09:53:59.738 +02:00 [Debug] Getting Topic for Azure Service Bus
+2015-10-02 09:53:59.882 +02:00 [Debug] Delete old subscription for Azure Service Bus
+2015-10-02 09:53:59.999 +02:00 [Debug] Creating Subscription for Azure Service Bus
+2015-10-02 09:54:00.468 +02:00 [Debug] Azure ServiceBus Scaling - SUBSCRIBE
+2015-10-02 09:54:00.489 +02:00 [Verbose] New Connection { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:54:00.539 +02:00 [Verbose] Authenticaiton pipeline, GetPrincipal
+2015-10-02 09:54:00.542 +02:00 [Verbose] Start reading from socket
+2015-10-02 09:54:00.545 +02:00 [Verbose] Reading from socket
+2015-10-02 09:54:00.555 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:54:00.563 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{\\"init\\":true}\",\"C\":\"led\",\"T\":\"1\"}"
+2015-10-02 09:54:00.568 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{\"init\":true}", MessageType: Text, Controller: "led", Topic: "1" }
+2015-10-02 09:54:00.578 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "{\"CI\":\"bf3f50aa-16e8-410f-b13f-d198eb2e513b\",\"PI\":\"9cb24f28-d8d1-41f4-bb62-308978567097\",\"C\":\"led\"}", MessageType: Text, Controller: "led", Topic: "2" }
+2015-10-02 09:54:00.587 +02:00 [Verbose] Controller open "led" for context { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:54:00.603 +02:00 [Verbose] Reading from socket
+2015-10-02 09:54:22.107 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:54:22.111 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"true\",\"C\":\"led\",\"T\":\"stateall\"}"
+2015-10-02 09:54:22.117 +02:00 [Debug] VerifyController Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "stateall" }
+2015-10-02 09:54:22.124 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "stateall" }
+2015-10-02 09:54:22.149 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"true\",\"C\":\"led\",\"T\":\"stateall\"}"
+2015-10-02 09:54:22.154 +02:00 [Verbose] Reading from socket
+2015-10-02 09:54:22.163 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "true", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 09:54:56.115 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:54:56.119 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{\\"b\\":true,\\"c\\":\\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\\"}\",\"C\":\"led\",\"T\":\"stateone\"}"
+2015-10-02 09:54:56.123 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{\"b\":true,\"c\":\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\"}", MessageType: Text, Controller: "led", Topic: "stateone" }
+2015-10-02 09:54:56.130 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "{\"b\":true,\"c\":\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\"}", MessageType: Text, Controller: "led", Topic: "stateone" }
+2015-10-02 09:54:56.202 +02:00 [Error] InvokePluginMethod<T>. Data passed to controller "led" and method "State" with data "{\"b\":true,\"c\":\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\"}"
+System.ArgumentException: Can not convert Null to Guid.
+   at Newtonsoft.Json.Linq.JToken.op_Explicit(JToken value)
+   at Newtonsoft.Json.Linq.JToken.ToObject(Type objectType)
+   at XSockets.Serialization.XSocketJsonSerializer.<>c__DisplayClass10_0.<DeserializeFromString>b__3(<>f__AnonymousType0`2 p)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at XSockets.Serialization.XSocketJsonSerializer.DeserializeFromString(String json, ParameterInfo[] parameterInfo)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.ExtractMethodParameters(ParameterInfo[] parameterInfo, IXSocketController controller, String json)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.<InvokePluginMethod>d__98`1.MoveNext()
+2015-10-02 09:54:56.220 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"{\\"b\\":true,\\"c\\":\\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\\"}\",\"C\":\"led\",\"T\":\"stateone\"}"
+2015-10-02 09:54:56.225 +02:00 [Verbose] Reading from socket
+2015-10-02 09:55:06.345 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:55:06.349 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{\\"b\\":true,\\"c\\":\\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\\"}\",\"C\":\"led\",\"T\":\"stateone\"}"
+2015-10-02 09:55:06.353 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{\"b\":true,\"c\":\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\"}", MessageType: Text, Controller: "led", Topic: "stateone" }
+2015-10-02 09:55:06.358 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "{\"b\":true,\"c\":\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\"}", MessageType: Text, Controller: "led", Topic: "stateone" }
+2015-10-02 09:55:06.394 +02:00 [Error] InvokePluginMethod<T>. Data passed to controller "led" and method "State" with data "{\"b\":true,\"c\":\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\"}"
+System.ArgumentException: Can not convert Null to Guid.
+   at Newtonsoft.Json.Linq.JToken.op_Explicit(JToken value)
+   at Newtonsoft.Json.Linq.JToken.ToObject(Type objectType)
+   at XSockets.Serialization.XSocketJsonSerializer.<>c__DisplayClass10_0.<DeserializeFromString>b__3(<>f__AnonymousType0`2 p)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at XSockets.Serialization.XSocketJsonSerializer.DeserializeFromString(String json, ParameterInfo[] parameterInfo)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.ExtractMethodParameters(ParameterInfo[] parameterInfo, IXSocketController controller, String json)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.<InvokePluginMethod>d__98`1.MoveNext()
+2015-10-02 09:55:06.416 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"{\\"b\\":true,\\"c\\":\\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\\"}\",\"C\":\"led\",\"T\":\"stateone\"}"
+2015-10-02 09:55:06.423 +02:00 [Verbose] Reading from socket
+2015-10-02 09:55:13.658 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:55:13.661 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{\\"b\\":\\"true\\",\\"c\\":\\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\\"}\",\"C\":\"led\",\"T\":\"stateone\"}"
+2015-10-02 09:55:13.665 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{\"b\":\"true\",\"c\":\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\"}", MessageType: Text, Controller: "led", Topic: "stateone" }
+2015-10-02 09:55:13.672 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "{\"b\":\"true\",\"c\":\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\"}", MessageType: Text, Controller: "led", Topic: "stateone" }
+2015-10-02 09:55:13.713 +02:00 [Error] InvokePluginMethod<T>. Data passed to controller "led" and method "State" with data "{\"b\":\"true\",\"c\":\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\"}"
+System.ArgumentException: Can not convert Null to Guid.
+   at Newtonsoft.Json.Linq.JToken.op_Explicit(JToken value)
+   at Newtonsoft.Json.Linq.JToken.ToObject(Type objectType)
+   at XSockets.Serialization.XSocketJsonSerializer.<>c__DisplayClass10_0.<DeserializeFromString>b__3(<>f__AnonymousType0`2 p)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at XSockets.Serialization.XSocketJsonSerializer.DeserializeFromString(String json, ParameterInfo[] parameterInfo)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.ExtractMethodParameters(ParameterInfo[] parameterInfo, IXSocketController controller, String json)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.<InvokePluginMethod>d__98`1.MoveNext()
+2015-10-02 09:55:13.731 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"{\\"b\\":\\"true\\",\\"c\\":\\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\\"}\",\"C\":\"led\",\"T\":\"stateone\"}"
+2015-10-02 09:55:13.734 +02:00 [Verbose] Reading from socket
+2015-10-02 09:55:20.409 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:55:20.412 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{\\"b\\":\\"true\\",\\"clientId\\":\\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\\"}\",\"C\":\"led\",\"T\":\"stateone\"}"
+2015-10-02 09:55:20.416 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{\"b\":\"true\",\"clientId\":\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\"}", MessageType: Text, Controller: "led", Topic: "stateone" }
+2015-10-02 09:55:20.423 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "{\"b\":\"true\",\"clientId\":\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\"}", MessageType: Text, Controller: "led", Topic: "stateone" }
+2015-10-02 09:55:22.342 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"{\\"b\\":\\"true\\",\\"clientId\\":\\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\\"}\",\"C\":\"led\",\"T\":\"stateone\"}"
+2015-10-02 09:55:22.343 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "true", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 09:55:22.346 +02:00 [Verbose] Reading from socket
+2015-10-02 09:55:51.634 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:55:51.638 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{\\"b\\":\\"true\\",\\"clientId\\":\\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\\"}\",\"C\":\"led\",\"T\":\"stateone\"}"
+2015-10-02 09:55:51.642 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{\"b\":\"true\",\"clientId\":\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\"}", MessageType: Text, Controller: "led", Topic: "stateone" }
+2015-10-02 09:55:51.648 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "{\"b\":\"true\",\"clientId\":\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\"}", MessageType: Text, Controller: "led", Topic: "stateone" }
+2015-10-02 09:55:53.059 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"{\\"b\\":\\"true\\",\\"clientId\\":\\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\\"}\",\"C\":\"led\",\"T\":\"stateone\"}"
+2015-10-02 09:55:53.059 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "true", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 09:55:53.090 +02:00 [Verbose] Reading from socket
+2015-10-02 09:55:58.325 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:55:58.328 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{\\"b\\":\\"true\\",\\"clientId\\":\\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\\"}\",\"C\":\"led\",\"T\":\"stateone\"}"
+2015-10-02 09:55:58.333 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{\"b\":\"true\",\"clientId\":\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\"}", MessageType: Text, Controller: "led", Topic: "stateone" }
+2015-10-02 09:55:58.339 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "{\"b\":\"true\",\"clientId\":\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\"}", MessageType: Text, Controller: "led", Topic: "stateone" }
+2015-10-02 09:55:58.347 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"{\\"b\\":\\"true\\",\\"clientId\\":\\"3172fb39-7af8-472d-b1b9-dbe642b03dfa\\"}\",\"C\":\"led\",\"T\":\"stateone\"}"
+2015-10-02 09:55:58.347 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "true", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 09:55:58.353 +02:00 [Verbose] Reading from socket
+2015-10-02 09:56:32.053 +02:00 [Verbose] Controller closed "photon" for context { User: null, CookieCollection: [], Headers: [], IsAuthenticated: False, IsSecureConnection: False, Origin: null, PersistentId: 3172fb39-7af8-472d-b1b9-dbe642b03dfa, QueryString: [], RawHandshake: null, Reconnecting: False, RequestUri: ws://127.0.0.1/PuttyProtocol }
+2015-10-02 09:56:32.065 +02:00 [Verbose] Connection closed { User: null, CookieCollection: [], Headers: [], IsAuthenticated: False, IsSecureConnection: False, Origin: null, PersistentId: 3172fb39-7af8-472d-b1b9-dbe642b03dfa, QueryString: [], RawHandshake: null, Reconnecting: True, RequestUri: ws://127.0.0.1/PuttyProtocol }
+2015-10-02 09:56:58.165 +02:00 [Information] License Information: LicenseTerms { LicenseType: Evaluation, Scaling: True, ConnectionLimit: -1, StartDate: 09/20/2015 19:38:52, EndDate: 10/04/2015 19:38:52, OwnerName: "MBA-WIN8\uffe", Corporate: "N/A", Address: "N/A", PostalCode: "N/A", City: "N/A", Country: "N/A", ProductName: null, Id: 499a7258-2497-43ef-8171-a0581f5f3368, IsValid: True }
+2015-10-02 09:56:58.203 +02:00 [Warning] The XSockets.NET Evaluation license will let the server run for 1 days per start, but will have all features enabled
+2015-10-02 09:56:58.204 +02:00 [Information] Get a free developer license at "http://xsockets.net/"
+2015-10-02 09:56:58.207 +02:00 [Warning] Server will shut down in 0 days 23:59:59
+2015-10-02 09:56:58.214 +02:00 [Information] Server starting at 10/02/2015 09:56:58 with interceptors True
+2015-10-02 09:56:58.240 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "10.41.51.212", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-10-02 09:56:58.244 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-10-02 09:56:58.247 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "10.41.51.212", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-10-02 09:56:58.254 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-10-02 09:57:03.261 +02:00 [Verbose] ProtocolHandshakeHandler - Reading Handshake
+2015-10-02 09:57:03.289 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Identified "Rfc6455Protocol"
+2015-10-02 09:57:03.297 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Resolved
+2015-10-02 09:57:03.303 +02:00 [Verbose] ProtocolHandshakeHandler - Handshake OK!
+2015-10-02 09:57:03.313 +02:00 [Debug] Azure ServiceBus Scaling - INIT
+2015-10-02 09:57:03.861 +02:00 [Debug] Getting Topic for Azure Service Bus
+2015-10-02 09:57:05.160 +02:00 [Debug] Creating Subscription for Azure Service Bus
+2015-10-02 09:57:05.901 +02:00 [Debug] Azure ServiceBus Scaling - SUBSCRIBE
+2015-10-02 09:57:05.911 +02:00 [Verbose] New Connection { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:57:05.922 +02:00 [Verbose] Authenticaiton pipeline, GetPrincipal
+2015-10-02 09:57:05.927 +02:00 [Verbose] Start reading from socket
+2015-10-02 09:57:05.928 +02:00 [Verbose] Reading from socket
+2015-10-02 09:57:05.941 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:57:06.084 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{\\"init\\":true}\",\"C\":\"led\",\"T\":\"1\"}"
+2015-10-02 09:57:06.110 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{\"init\":true}", MessageType: Text, Controller: "led", Topic: "1" }
+2015-10-02 09:57:06.129 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "{\"CI\":\"f116e6df-f576-476d-b59c-88d8d6f4aaa0\",\"PI\":\"9cb24f28-d8d1-41f4-bb62-308978567097\",\"C\":\"led\"}", MessageType: Text, Controller: "led", Topic: "2" }
+2015-10-02 09:57:06.145 +02:00 [Verbose] Controller open "led" for context { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:57:06.159 +02:00 [Verbose] Reading from socket
+2015-10-02 09:57:09.433 +02:00 [Verbose] ProtocolHandshakeHandler - Reading Handshake
+2015-10-02 09:57:11.743 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Identified "PuttyProtocol"
+2015-10-02 09:57:11.751 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Resolved
+2015-10-02 09:57:11.755 +02:00 [Verbose] ProtocolHandshakeHandler - Handshake OK!
+2015-10-02 09:57:11.761 +02:00 [Debug] Azure ServiceBus Scaling - INIT
+2015-10-02 09:57:11.834 +02:00 [Debug] Getting Topic for Azure Service Bus
+2015-10-02 09:57:11.973 +02:00 [Debug] Delete old subscription for Azure Service Bus
+2015-10-02 09:57:12.084 +02:00 [Debug] Creating Subscription for Azure Service Bus
+2015-10-02 09:57:12.390 +02:00 [Debug] Azure ServiceBus Scaling - SUBSCRIBE
+2015-10-02 09:57:12.398 +02:00 [Verbose] New Connection { User: null, CookieCollection: [], Headers: [], IsAuthenticated: False, IsSecureConnection: False, Origin: null, PersistentId: e6ac20be-3e7e-4f9d-9649-43064fa27d50, QueryString: [], RawHandshake: null, Reconnecting: False, RequestUri: ws://127.0.0.1/PuttyProtocol }
+2015-10-02 09:57:12.411 +02:00 [Verbose] Authenticaiton pipeline, GetPrincipal
+2015-10-02 09:57:12.415 +02:00 [Verbose] Start reading from socket
+2015-10-02 09:57:12.420 +02:00 [Verbose] Reading from socket
+2015-10-02 09:57:16.160 +02:00 [Verbose] Reading from socket
+2015-10-02 09:57:16.164 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:57:16.169 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"\\"\\"\",\"C\":\"photon\",\"T\":\"1\"}"
+2015-10-02 09:57:16.171 +02:00 [Debug] VerifyController Message { Blob: null, Data: "\"\"", MessageType: Text, Controller: "photon", Topic: "1" }
+2015-10-02 09:57:16.177 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "{\"CI\":\"1dcc302e-e370-4c8a-9012-d374f71eef07\",\"PI\":\"e6ac20be-3e7e-4f9d-9649-43064fa27d50\",\"C\":\"photon\"}", MessageType: Text, Controller: "photon", Topic: "2" }
+2015-10-02 09:57:16.260 +02:00 [Verbose] Controller open "photon" for context { User: null, CookieCollection: [], Headers: [], IsAuthenticated: False, IsSecureConnection: False, Origin: null, PersistentId: e6ac20be-3e7e-4f9d-9649-43064fa27d50, QueryString: [], RawHandshake: null, Reconnecting: False, RequestUri: ws://127.0.0.1/PuttyProtocol }
+2015-10-02 09:57:16.276 +02:00 [Verbose] Reading from socket
+2015-10-02 09:57:18.250 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:57:18.253 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"true\",\"C\":\"led\",\"T\":\"state\"}"
+2015-10-02 09:57:18.256 +02:00 [Debug] VerifyController Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 09:57:18.263 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 09:57:18.297 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"true\",\"C\":\"led\",\"T\":\"state\"}"
+2015-10-02 09:57:18.303 +02:00 [Verbose] Reading from socket
+2015-10-02 09:57:18.311 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "true", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 09:57:27.574 +02:00 [Verbose] Reading from socket
+2015-10-02 09:57:27.580 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 09:57:27.587 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"\\"true\\"\",\"C\":\"photon\",\"T\":\"state\"}"
+2015-10-02 09:57:27.595 +02:00 [Debug] VerifyController Message { Blob: null, Data: "\"true\"", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 09:57:27.605 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "\"true\"", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 09:57:27.617 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"\\"true\\"\",\"C\":\"photon\",\"T\":\"state\"}"
+2015-10-02 09:57:27.620 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 09:57:27.633 +02:00 [Verbose] Reading from socket
+2015-10-02 09:57:48.209 +02:00 [Verbose] Controller closed "photon" for context { User: null, CookieCollection: [], Headers: [], IsAuthenticated: False, IsSecureConnection: False, Origin: null, PersistentId: e6ac20be-3e7e-4f9d-9649-43064fa27d50, QueryString: [], RawHandshake: null, Reconnecting: False, RequestUri: ws://127.0.0.1/PuttyProtocol }
+2015-10-02 09:57:48.219 +02:00 [Verbose] Connection closed { User: null, CookieCollection: [], Headers: [], IsAuthenticated: False, IsSecureConnection: False, Origin: null, PersistentId: e6ac20be-3e7e-4f9d-9649-43064fa27d50, QueryString: [], RawHandshake: null, Reconnecting: True, RequestUri: ws://127.0.0.1/PuttyProtocol }
+2015-10-02 09:57:49.908 +02:00 [Verbose] Frame Ready, type: Close
+2015-10-02 09:57:49.911 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "{\"CI\":\"f116e6df-f576-476d-b59c-88d8d6f4aaa0\",\"PI\":\"9cb24f28-d8d1-41f4-bb62-308978567097\",\"C\":\"led\"}", MessageType: Text, Controller: "led", Topic: "3" }
+2015-10-02 09:57:49.917 +02:00 [Verbose] Controller closed "led" for context { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:57:49.970 +02:00 [Verbose] Connection closed { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 09:57:49.990 +02:00 [Verbose] Reading from socket
+2015-10-02 13:18:20.644 +02:00 [Information] License Information: LicenseTerms { LicenseType: Evaluation, Scaling: True, ConnectionLimit: -1, StartDate: 09/20/2015 19:38:52, EndDate: 10/04/2015 19:38:52, OwnerName: "MBA-WIN8\uffe", Corporate: "N/A", Address: "N/A", PostalCode: "N/A", City: "N/A", Country: "N/A", ProductName: null, Id: 0b5069d9-374e-4cdc-b5cb-9ef492f5d6d6, IsValid: True }
+2015-10-02 13:18:20.685 +02:00 [Warning] The XSockets.NET Evaluation license will let the server run for 1 days per start, but will have all features enabled
+2015-10-02 13:18:20.688 +02:00 [Information] Get a free developer license at "http://xsockets.net/"
+2015-10-02 13:18:20.693 +02:00 [Warning] Server will shut down in 0 days 23:59:59
+2015-10-02 13:18:21.036 +02:00 [Information] Server starting at 10/02/2015 13:18:21 with interceptors True
+2015-10-02 13:18:21.069 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "10.164.75.169", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-10-02 13:18:21.074 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-10-02 13:18:21.078 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "10.164.75.169", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-10-02 13:18:21.089 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-10-02 13:18:26.007 +02:00 [Verbose] ProtocolHandshakeHandler - Reading Handshake
+2015-10-02 13:18:26.044 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Identified "Rfc6455Protocol"
+2015-10-02 13:18:26.053 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Resolved
+2015-10-02 13:18:26.061 +02:00 [Verbose] ProtocolHandshakeHandler - Handshake OK!
+2015-10-02 13:18:26.072 +02:00 [Debug] Azure ServiceBus Scaling - INIT
+2015-10-02 13:18:26.609 +02:00 [Debug] Getting Topic for Azure Service Bus
+2015-10-02 13:18:27.918 +02:00 [Debug] Creating Subscription for Azure Service Bus
+2015-10-02 13:18:28.678 +02:00 [Debug] Azure ServiceBus Scaling - SUBSCRIBE
+2015-10-02 13:18:28.691 +02:00 [Verbose] New Connection { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 13:18:28.707 +02:00 [Verbose] Authenticaiton pipeline, GetPrincipal
+2015-10-02 13:18:28.719 +02:00 [Verbose] Start reading from socket
+2015-10-02 13:18:28.725 +02:00 [Verbose] Reading from socket
+2015-10-02 13:18:28.773 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 13:18:29.022 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{\\"init\\":true}\",\"C\":\"led\",\"T\":\"1\"}"
+2015-10-02 13:18:29.046 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{\"init\":true}", MessageType: Text, Controller: "led", Topic: "1" }
+2015-10-02 13:18:29.067 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "{\"CI\":\"fecf60b1-478a-4d07-84bd-60afa837235d\",\"PI\":\"9cb24f28-d8d1-41f4-bb62-308978567097\",\"C\":\"led\"}", MessageType: Text, Controller: "led", Topic: "2" }
+2015-10-02 13:18:29.103 +02:00 [Verbose] Controller open "led" for context { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 13:18:29.142 +02:00 [Verbose] Reading from socket
+2015-10-02 13:18:37.586 +02:00 [Verbose] ProtocolHandshakeHandler - Reading Handshake
+2015-10-02 13:18:40.504 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Identified "PuttyProtocol"
+2015-10-02 13:18:40.512 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Resolved
+2015-10-02 13:18:40.518 +02:00 [Verbose] ProtocolHandshakeHandler - Handshake OK!
+2015-10-02 13:18:40.526 +02:00 [Debug] Azure ServiceBus Scaling - INIT
+2015-10-02 13:18:40.571 +02:00 [Debug] Getting Topic for Azure Service Bus
+2015-10-02 13:18:40.665 +02:00 [Debug] Delete old subscription for Azure Service Bus
+2015-10-02 13:18:40.751 +02:00 [Debug] Creating Subscription for Azure Service Bus
+2015-10-02 13:18:41.167 +02:00 [Debug] Azure ServiceBus Scaling - SUBSCRIBE
+2015-10-02 13:18:41.237 +02:00 [Verbose] New Connection { User: null, CookieCollection: [], Headers: [], IsAuthenticated: False, IsSecureConnection: False, Origin: null, PersistentId: b8ea49a2-0e63-463b-9fc7-81f22e6c0988, QueryString: [], RawHandshake: null, Reconnecting: False, RequestUri: ws://127.0.0.1/PuttyProtocol }
+2015-10-02 13:18:41.420 +02:00 [Verbose] Authenticaiton pipeline, GetPrincipal
+2015-10-02 13:18:41.458 +02:00 [Verbose] Start reading from socket
+2015-10-02 13:18:41.466 +02:00 [Verbose] Reading from socket
+2015-10-02 13:18:43.665 +02:00 [Verbose] Reading from socket
+2015-10-02 13:18:43.672 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 13:18:43.681 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"\\"\\"\",\"C\":\"photon\",\"T\":\"1\"}"
+2015-10-02 13:18:43.689 +02:00 [Debug] VerifyController Message { Blob: null, Data: "\"\"", MessageType: Text, Controller: "photon", Topic: "1" }
+2015-10-02 13:18:43.696 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "{\"CI\":\"c5496440-f842-4ec5-abd1-5e2bb0a2b167\",\"PI\":\"b8ea49a2-0e63-463b-9fc7-81f22e6c0988\",\"C\":\"photon\"}", MessageType: Text, Controller: "photon", Topic: "2" }
+2015-10-02 13:18:43.795 +02:00 [Verbose] Controller open "photon" for context { User: null, CookieCollection: [], Headers: [], IsAuthenticated: False, IsSecureConnection: False, Origin: null, PersistentId: b8ea49a2-0e63-463b-9fc7-81f22e6c0988, QueryString: [], RawHandshake: null, Reconnecting: False, RequestUri: ws://127.0.0.1/PuttyProtocol }
+2015-10-02 13:18:43.810 +02:00 [Verbose] Reading from socket
+2015-10-02 13:18:45.571 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 13:18:45.575 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"true\",\"C\":\"led\",\"T\":\"state\"}"
+2015-10-02 13:18:45.578 +02:00 [Debug] VerifyController Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 13:18:45.586 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 13:18:45.620 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"true\",\"C\":\"led\",\"T\":\"state\"}"
+2015-10-02 13:18:45.625 +02:00 [Verbose] Reading from socket
+2015-10-02 13:18:45.643 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "true", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 13:18:56.806 +02:00 [Verbose] Reading from socket
+2015-10-02 13:18:56.811 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 13:18:56.819 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"\\"true\\"\",\"C\":\"photon\",\"T\":\"state\"}"
+2015-10-02 13:18:56.824 +02:00 [Debug] VerifyController Message { Blob: null, Data: "\"true\"", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 13:18:56.828 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "\"true\"", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 13:18:56.836 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"\\"true\\"\",\"C\":\"photon\",\"T\":\"state\"}"
+2015-10-02 13:18:56.837 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 13:18:56.841 +02:00 [Verbose] Reading from socket
+2015-10-02 13:19:00.526 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 13:19:00.530 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"false\",\"C\":\"led\",\"T\":\"state\"}"
+2015-10-02 13:19:00.533 +02:00 [Debug] VerifyController Message { Blob: null, Data: "false", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 13:19:00.540 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "false", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 13:19:00.551 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"false\",\"C\":\"led\",\"T\":\"state\"}"
+2015-10-02 13:19:00.551 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "false", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 13:19:00.555 +02:00 [Verbose] Reading from socket
+2015-10-02 13:19:09.015 +02:00 [Verbose] Reading from socket
+2015-10-02 13:19:09.020 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 13:19:09.023 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"\\"false\\"\",\"C\":\"photon\",\"T\":\"state\"}"
+2015-10-02 13:19:09.026 +02:00 [Debug] VerifyController Message { Blob: null, Data: "\"false\"", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 13:19:09.034 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "\"false\"", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 13:19:09.040 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"\\"false\\"\",\"C\":\"photon\",\"T\":\"state\"}"
+2015-10-02 13:19:09.040 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "false", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 13:19:09.044 +02:00 [Verbose] Reading from socket
+2015-10-02 13:20:41.255 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 13:20:41.258 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"true\",\"C\":\"led\",\"T\":\"state\"}"
+2015-10-02 13:20:41.264 +02:00 [Debug] VerifyController Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 13:20:41.275 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 13:20:41.284 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"true\",\"C\":\"led\",\"T\":\"state\"}"
+2015-10-02 13:20:41.284 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "true", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 13:20:41.315 +02:00 [Verbose] Reading from socket
+2015-10-02 13:20:49.790 +02:00 [Verbose] Reading from socket
+2015-10-02 13:20:49.797 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 13:20:49.804 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"\\"true\\"\",\"C\":\"photon\",\"T\":\"state\"}"
+2015-10-02 13:20:49.812 +02:00 [Debug] VerifyController Message { Blob: null, Data: "\"true\"", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 13:20:49.822 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "\"true\"", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 13:20:49.831 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"\\"true\\"\",\"C\":\"photon\",\"T\":\"state\"}"
+2015-10-02 13:20:49.831 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "true", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 13:20:49.834 +02:00 [Verbose] Reading from socket
+2015-10-02 13:21:09.238 +02:00 [Verbose] Reading from socket
+2015-10-02 13:21:09.249 +02:00 [Verbose] Frame Ready, type: Text
+2015-10-02 13:21:09.257 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"\\"false\\"\",\"C\":\"photon\",\"T\":\"state\"}"
+2015-10-02 13:21:09.263 +02:00 [Debug] VerifyController Message { Blob: null, Data: "\"false\"", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 13:21:09.275 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "\"false\"", MessageType: Text, Controller: "photon", Topic: "state" }
+2015-10-02 13:21:09.286 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"\\"false\\"\",\"C\":\"photon\",\"T\":\"state\"}"
+2015-10-02 13:21:09.286 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "false", MessageType: Text, Controller: "led", Topic: "state" }
+2015-10-02 13:21:09.292 +02:00 [Verbose] Reading from socket
+2015-10-02 13:21:18.346 +02:00 [Verbose] Frame Ready, type: Close
+2015-10-02 13:21:18.362 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "{\"CI\":\"fecf60b1-478a-4d07-84bd-60afa837235d\",\"PI\":\"9cb24f28-d8d1-41f4-bb62-308978567097\",\"C\":\"led\"}", MessageType: Text, Controller: "led", Topic: "3" }
+2015-10-02 13:21:18.369 +02:00 [Verbose] Controller closed "led" for context { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 13:21:18.391 +02:00 [Verbose] Connection closed { User: null, CookieCollection: [], Headers: ["host", "connection", "pragma", "cache-control", "upgrade", "origin", "sec-websocket-version", "user-agent", "accept-encoding", "accept-language", "sec-websocket-key", "sec-websocket-extensions", "sec-websocket-protocol"], IsAuthenticated: False, IsSecureConnection: False, Origin: "http://localhost:14245", PersistentId: 9cb24f28-d8d1-41f4-bb62-308978567097, QueryString: ["persistentId"], RawHandshake: null, Reconnecting: True, RequestUri: http://localhost:14245/?persistentId=9cb24f28-d8d1-41f4-bb62-308978567097 }
+2015-10-02 13:21:18.408 +02:00 [Verbose] Reading from socket
+2015-10-02 13:23:20.693 +02:00 [Warning] Server will shut down in 0 days 23:54:59
+2015-10-02 13:28:20.696 +02:00 [Warning] Server will shut down in 0 days 23:49:59
+2015-10-02 13:33:20.706 +02:00 [Warning] Server will shut down in 0 days 23:44:59
+2015-10-02 13:38:20.706 +02:00 [Warning] Server will shut down in 0 days 23:39:59
+2015-10-02 13:43:20.722 +02:00 [Warning] Server will shut down in 0 days 23:34:59
+2015-10-02 13:48:20.723 +02:00 [Warning] Server will shut down in 0 days 23:29:59
+2015-10-02 13:53:20.726 +02:00 [Warning] Server will shut down in 0 days 23:24:59
+2015-10-02 13:58:20.726 +02:00 [Warning] Server will shut down in 0 days 23:19:59

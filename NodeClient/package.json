@@ -1,0 +1,13 @@
+{
+  "name": "NodeClient",
+  "version": "0.0.0",
+  "description": "NodeClient",
+  "main": "app.js",
+  "author": {
+    "name": "uffe",
+    "email": ""
+  },
+  "dependencies": {
+    "xsockets.net": "0.0.6"
+  }
+}

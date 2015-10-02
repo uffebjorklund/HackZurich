@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Hack Zürich</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        #kinect {
+            border-radius: 50%;
+            display: inline-block;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            background: #808080;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        #map-canvas {
+            margin: 0;
+            padding: 0;
+            min-height: 270px;
+        }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <h2>Hack Zürich - <small id="serverid"></small></h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>Private temp limit</h3>
+                <div>
+                    <select id="tempthreshold" onchange="setTempThreshold()">
+                        <option value="0" selected>Choose your limit (default 0)</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>WeatherSensor</h3>
+                <div id="map-canvas"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>Sensor</h3>
+                <div id="kinect" class="unknown">
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <footer>
+            <p class="pull-right">
+                Coding4Fun
+            </p>
+        </footer>
+    </div> <!-- /container -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/XSockets.latest.js"></script>
+    <script type='text/javascript' src="http://maps.googleapis.com/maps/api/js?sensor=false&extension=.js&output=embed"></script>
+    <script>
+        var map;
+        var marker;
+        var markers = [];
+        var infowindow;
+
+        var prod = 'hackzurich.cloudapp.net:8080'
+        var dev = 'localhost:4502';
+        var ws = new XSockets.WebSocket('ws://' + prod, ['monitor'], { clienttype: 'monitor' });
+        var monitor = ws.controller('monitor');
+
+        ///////////////////////////////////////////////////
+        // CONNECTION STUFF
+        ///////////////////////////////////////////////////
+        ws.onconnected = function () {
+            console.log('connected');
+        }
+        monitor.onopen = function () {
+            console.log('monitor controller open');
+            
+        };        
+
+        monitor.on('cc', function (d) {
+            console.log('sensor disconnected: ', d);
+        });
+
+        monitor.on('ci', function (d) {
+            console.log('sensor connected: ', d);
+            document.querySelector('#kinect').style.background = "orange";
+        });
+
+        ///////////////////////////////////////////////////
+        // SENSOR DATA
+        ///////////////////////////////////////////////////
+        monitor.on('wd', function (d) {
+            console.log('weather sensor: ', d);
+            document.querySelector('#kinect').style.background = "green";
+            addMarker(d);
+        });
+
+        ///////////////////////////////////////////////////
+        // INDIVIDUAL LIMIT
+        ///////////////////////////////////////////////////
+        monitor.on('get_tempthreshold', function (d) {
+            document.querySelector('#tempthreshold').value = d;
+        })
+        setTempThreshold = function (d) {
+            var t = document.querySelector('#tempthreshold').value;
+            monitor.setProperty('tempthreshold', t);
+        };        
+
+        ///////////////////////////////////////////////////
+        // KINECT STUFF
+        ///////////////////////////////////////////////////
+        monitor.on('kinect', function (d) {
+            console.log('kinect: ', d);
+            if (d == true) {
+                document.querySelector('#kinect').style.background = "orange";
+            }
+            else {
+                document.querySelector('#kinect').style.background = "#808080";
+            }
+        });
+
+        //Commands sent to the sensor
+        monitor.on('on', function (d) {
+            document.querySelector('#kinect').style.background = "green";
+            if (!marker) return;
+            infowindow.open(map, marker);
+            marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
+        });
+        monitor.on('off', function (d) {
+            document.querySelector('#kinect').style.background = "red";
+            if (!marker) return;
+            infowindow.close();
+            marker.setIcon('http://maps.google.com/mapfiles/ms/icons/red-dot.png');
+        });
+
+        ///////////////////////////////////////////////////
+        // SCALING STUFF
+        ///////////////////////////////////////////////////
+        monitor.on('scaleoutid', function (d) {
+            document.querySelector('#serverid').textContent = d;
+            monitor.invoke('get_tempthreshold');
+        });
+
+        ///////////////////////////////////////////////////
+        // GOOGLE MAPS STUFF
+        ///////////////////////////////////////////////////
+        function addMarker(d) {
+            if (markers[0] != d.SensorId) {
+                var pos = new google.maps.LatLng(d.Lat, d.Lng);
+                marker = new google.maps.Marker({
+                    position: pos,
+                    map: map,
+                });
+                var markup = "<h4>" + d.Name + "<small> - " + d.Organization + "</small></h4>" +
+                "<div>Humidity: " + d.Humidity + "</div>" +
+                "<div>Temperature: " + d.Temperature + "</div>";
+                marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
+                infowindow = new google.maps.InfoWindow({
+                    content: markup
+                });
+                infowindow.open(map, marker);
+                map.panTo(pos);
+                map.setZoom(11);
+                markers[0] = d.SensorId;
+            }
+            else {
+                var markup = "<h4>" + d.Name + "<small> - " + d.Organization + "</small></h4>" +
+                                "<div>Humidity: " + d.Humidity + "</div>" +
+                                "<div>Temperature: " + d.Temperature + "</div>";
+                infowindow.setContent(markup);
+                infowindow.open(map, marker);
+            }
+        }
+        $(document).ready(function () {
+
+
+            function initialize() {
+                var mapOptions = {
+                    zoom: 8,
+                    center: new google.maps.LatLng(47.367347, 8.5500025),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+
+        });
+
+    </script>
+
+</body>
+</html>

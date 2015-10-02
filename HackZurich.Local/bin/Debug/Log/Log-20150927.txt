@@ -1,0 +1,371 @@
+﻿2015-09-27 18:53:49.882 +02:00 [Information] License Information: LicenseTerms { LicenseType: Evaluation, Scaling: True, ConnectionLimit: -1, StartDate: 09/20/2015 19:38:52, EndDate: 10/04/2015 19:38:52, OwnerName: "MBA-WIN8\uffe", Corporate: "N/A", Address: "N/A", PostalCode: "N/A", City: "N/A", Country: "N/A", ProductName: null, Id: c9cb010b-39f0-4a56-b53d-e217102a21cd, IsValid: True }
+2015-09-27 18:53:49.923 +02:00 [Warning] The XSockets.NET Evaluation license will let the server run for 1 days per start, but will have all features enabled
+2015-09-27 18:53:49.925 +02:00 [Information] Get a free developer license at "http://xsockets.net/"
+2015-09-27 18:53:49.929 +02:00 [Warning] Server will shut down in 0 days 23:59:59
+2015-09-27 18:53:49.936 +02:00 [Information] Server starting at 09/27/2015 18:53:49 with interceptors True
+2015-09-27 18:53:49.961 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 18:53:49.965 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 18:53:49.970 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 18:53:49.978 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 18:54:06.278 +02:00 [Warning] Scheme: "ws"
+2015-09-27 18:54:06.650 +02:00 [Error] InvokePluginMethod<T>. Data passed to controller "photon" and method "SetClientInfo" with data "\"{ \\"Lat\\":\\"47.367347\\",\\"Lng\\":\\"8.5500025\\",\\"Name\\":\\"Zurich\\",\\"Organization\\":\\"Team XSockets.NET\\" }\""
+Newtonsoft.Json.JsonSerializationException: Error converting value "{ "Lat":"47.367347","Lng":"8.5500025","Name":"Zurich","Organization":"Team XSockets.NET" }" to type 'HackZurich.Modules.Model.ClientInfo'. Path '', line 1, position 108. ---> System.ArgumentException: Could not cast or convert from System.String to HackZurich.Modules.Model.ClientInfo.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at XSockets.Serialization.XSocketJsonSerializer.DeserializeFromString(String json, Type type)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.ExtractMethodParameters(ParameterInfo[] parameterInfo, IXSocketController controller, String json)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.<InvokePluginMethod>d__98`1.MoveNext()
+2015-09-27 18:54:07.427 +02:00 [Error] InvokePluginMethod<T>. Data passed to controller "photon" and method "OnWeatherData" with data "\"{ \\"Humidity\\":\\"47.466797\\",\\"Temperature\\":\\"24.128698\\" }\""
+Newtonsoft.Json.JsonSerializationException: Error converting value "{ "Humidity":"47.466797","Temperature":"24.128698" }" to type 'HackZurich.Modules.Model.WeatherData'. Path '', line 1, position 62. ---> System.ArgumentException: Could not cast or convert from System.String to HackZurich.Modules.Model.WeatherData.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at XSockets.Serialization.XSocketJsonSerializer.DeserializeFromString(String json, Type type)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.ExtractMethodParameters(ParameterInfo[] parameterInfo, IXSocketController controller, String json)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.<InvokePluginMethod>d__98`1.MoveNext()
+2015-09-27 18:54:08.613 +02:00 [Error] InvokePluginMethod<T>. Data passed to controller "photon" and method "OnWeatherData" with data "\"{ \\"Humidity\\":\\"47.466797\\",\\"Temperature\\":\\"24.117971\\" }\""
+Newtonsoft.Json.JsonSerializationException: Error converting value "{ "Humidity":"47.466797","Temperature":"24.117971" }" to type 'HackZurich.Modules.Model.WeatherData'. Path '', line 1, position 62. ---> System.ArgumentException: Could not cast or convert from System.String to HackZurich.Modules.Model.WeatherData.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at XSockets.Serialization.XSocketJsonSerializer.DeserializeFromString(String json, Type type)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.ExtractMethodParameters(ParameterInfo[] parameterInfo, IXSocketController controller, String json)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.<InvokePluginMethod>d__98`1.MoveNext()
+2015-09-27 18:54:09.690 +02:00 [Error] InvokePluginMethod<T>. Data passed to controller "photon" and method "OnWeatherData" with data "\"{ \\"Humidity\\":\\"47.451538\\",\\"Temperature\\":\\"24.128698\\" }\""
+Newtonsoft.Json.JsonSerializationException: Error converting value "{ "Humidity":"47.451538","Temperature":"24.128698" }" to type 'HackZurich.Modules.Model.WeatherData'. Path '', line 1, position 62. ---> System.ArgumentException: Could not cast or convert from System.String to HackZurich.Modules.Model.WeatherData.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at XSockets.Serialization.XSocketJsonSerializer.DeserializeFromString(String json, Type type)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.ExtractMethodParameters(ParameterInfo[] parameterInfo, IXSocketController controller, String json)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.<InvokePluginMethod>d__98`1.MoveNext()
+2015-09-27 18:54:10.775 +02:00 [Error] InvokePluginMethod<T>. Data passed to controller "photon" and method "OnWeatherData" with data "\"{ \\"Humidity\\":\\"47.466797\\",\\"Temperature\\":\\"24.139418\\" }\""
+Newtonsoft.Json.JsonSerializationException: Error converting value "{ "Humidity":"47.466797","Temperature":"24.139418" }" to type 'HackZurich.Modules.Model.WeatherData'. Path '', line 1, position 62. ---> System.ArgumentException: Could not cast or convert from System.String to HackZurich.Modules.Model.WeatherData.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at XSockets.Serialization.XSocketJsonSerializer.DeserializeFromString(String json, Type type)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.ExtractMethodParameters(ParameterInfo[] parameterInfo, IXSocketController controller, String json)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.<InvokePluginMethod>d__98`1.MoveNext()
+2015-09-27 18:57:45.724 +02:00 [Information] License Information: LicenseTerms { LicenseType: Evaluation, Scaling: True, ConnectionLimit: -1, StartDate: 09/20/2015 19:38:52, EndDate: 10/04/2015 19:38:52, OwnerName: "MBA-WIN8\uffe", Corporate: "N/A", Address: "N/A", PostalCode: "N/A", City: "N/A", Country: "N/A", ProductName: null, Id: 511aa3cb-9171-40e2-8c92-d52a50af773e, IsValid: True }
+2015-09-27 18:57:45.765 +02:00 [Warning] The XSockets.NET Evaluation license will let the server run for 1 days per start, but will have all features enabled
+2015-09-27 18:57:45.767 +02:00 [Information] Get a free developer license at "http://xsockets.net/"
+2015-09-27 18:57:45.771 +02:00 [Warning] Server will shut down in 0 days 23:59:59
+2015-09-27 18:57:45.779 +02:00 [Information] Server starting at 09/27/2015 18:57:45 with interceptors True
+2015-09-27 18:57:45.802 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 18:57:45.806 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 18:57:45.811 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 18:57:45.819 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 18:58:08.693 +02:00 [Error] Could not process frame: "photon|ci|{ \"Lat\":\"47.367347\",\"Lng\":\"8.5500025\",\"Name\":\"Zurich\",\"Organization\":\"Team XSockets.NET\" }"
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at XSockets.Core.XSocket.Model.Message..ctor(Object obj, String topic, String controller, IXSocketJsonSerializer serializer)
+   at HackZurich.Modules.Protocols.PhotonProtocolProxy.In(IEnumerable`1 payload, MessageType messageType) in C:\Users\uffe\Desktop\HackZurich\HackZurich.Modules\Protocols\PhotonProtocolProxy.cs:line 40
+   at XSockets.Protocol.XSocketProtocol.OnIncomingFrame(IEnumerable`1 payload, MessageType messageType)
+   at XSockets.Protocol.XSocketProtocol.<OnFrameReady>d__102.MoveNext()
+2015-09-27 19:04:03.653 +02:00 [Information] License Information: LicenseTerms { LicenseType: Evaluation, Scaling: True, ConnectionLimit: -1, StartDate: 09/20/2015 19:38:52, EndDate: 10/04/2015 19:38:52, OwnerName: "MBA-WIN8\uffe", Corporate: "N/A", Address: "N/A", PostalCode: "N/A", City: "N/A", Country: "N/A", ProductName: null, Id: 186f453a-53e7-429e-95db-663ea372e3b7, IsValid: True }
+2015-09-27 19:04:03.689 +02:00 [Warning] The XSockets.NET Evaluation license will let the server run for 1 days per start, but will have all features enabled
+2015-09-27 19:04:03.690 +02:00 [Information] Get a free developer license at "http://xsockets.net/"
+2015-09-27 19:04:03.693 +02:00 [Warning] Server will shut down in 0 days 23:59:59
+2015-09-27 19:04:03.702 +02:00 [Information] Server starting at 09/27/2015 19:04:03 with interceptors True
+2015-09-27 19:04:03.731 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:04:03.736 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:04:03.740 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:04:03.748 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:04:31.781 +02:00 [Error] Could not process frame: "photon|ci|{ \"Lat\":\"47.367347\",\"Lng\":\"8.5500025\",\"Name\":\"Zurich\",\"Organization\":\"Team XSockets.NET\" }"
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at XSockets.Core.XSocket.Model.Message..ctor(String obj, String topic, String controller)
+   at HackZurich.Modules.Protocols.PhotonProtocolProxy.In(IEnumerable`1 payload, MessageType messageType) in C:\Users\uffe\Desktop\HackZurich\HackZurich.Modules\Protocols\PhotonProtocolProxy.cs:line 40
+   at XSockets.Protocol.XSocketProtocol.OnIncomingFrame(IEnumerable`1 payload, MessageType messageType)
+   at XSockets.Protocol.XSocketProtocol.<OnFrameReady>d__102.MoveNext()
+2015-09-27 19:15:28.964 +02:00 [Information] License Information: LicenseTerms { LicenseType: Evaluation, Scaling: True, ConnectionLimit: -1, StartDate: 09/20/2015 19:38:52, EndDate: 10/04/2015 19:38:52, OwnerName: "MBA-WIN8\uffe", Corporate: "N/A", Address: "N/A", PostalCode: "N/A", City: "N/A", Country: "N/A", ProductName: null, Id: 16578c7c-f040-4ab5-b55c-dc20d24f9789, IsValid: True }
+2015-09-27 19:15:29.009 +02:00 [Warning] The XSockets.NET Evaluation license will let the server run for 1 days per start, but will have all features enabled
+2015-09-27 19:15:29.011 +02:00 [Information] Get a free developer license at "http://xsockets.net/"
+2015-09-27 19:15:29.016 +02:00 [Warning] Server will shut down in 0 days 23:59:59
+2015-09-27 19:15:29.026 +02:00 [Information] Server starting at 09/27/2015 19:15:29 with interceptors True
+2015-09-27 19:15:29.051 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:15:29.055 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:15:29.059 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:15:29.066 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:16:30.289 +02:00 [Information] License Information: LicenseTerms { LicenseType: Evaluation, Scaling: True, ConnectionLimit: -1, StartDate: 09/20/2015 19:38:52, EndDate: 10/04/2015 19:38:52, OwnerName: "MBA-WIN8\uffe", Corporate: "N/A", Address: "N/A", PostalCode: "N/A", City: "N/A", Country: "N/A", ProductName: null, Id: 88793a2a-10a3-44a7-a57a-864829b5b45b, IsValid: True }
+2015-09-27 19:16:30.351 +02:00 [Warning] The XSockets.NET Evaluation license will let the server run for 1 days per start, but will have all features enabled
+2015-09-27 19:16:30.353 +02:00 [Information] Get a free developer license at "http://xsockets.net/"
+2015-09-27 19:16:30.359 +02:00 [Warning] Server will shut down in 0 days 23:59:59
+2015-09-27 19:16:30.365 +02:00 [Information] Server starting at 09/27/2015 19:16:30 with interceptors True
+2015-09-27 19:16:30.391 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:16:30.395 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:16:30.399 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:16:30.406 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:21:36.844 +02:00 [Information] License Information: LicenseTerms { LicenseType: Evaluation, Scaling: True, ConnectionLimit: -1, StartDate: 09/20/2015 19:38:52, EndDate: 10/04/2015 19:38:52, OwnerName: "MBA-WIN8\uffe", Corporate: "N/A", Address: "N/A", PostalCode: "N/A", City: "N/A", Country: "N/A", ProductName: null, Id: 270586ad-0fcc-4a19-a0e2-41e855b45826, IsValid: True }
+2015-09-27 19:21:36.881 +02:00 [Warning] The XSockets.NET Evaluation license will let the server run for 1 days per start, but will have all features enabled
+2015-09-27 19:21:36.883 +02:00 [Information] Get a free developer license at "http://xsockets.net/"
+2015-09-27 19:21:36.889 +02:00 [Warning] Server will shut down in 0 days 23:59:59
+2015-09-27 19:21:36.896 +02:00 [Information] Server starting at 09/27/2015 19:21:36 with interceptors True
+2015-09-27 19:21:36.921 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:21:36.926 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:21:36.931 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:21:36.940 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:24:35.999 +02:00 [Information] License Information: LicenseTerms { LicenseType: Evaluation, Scaling: True, ConnectionLimit: -1, StartDate: 09/20/2015 19:38:52, EndDate: 10/04/2015 19:38:52, OwnerName: "MBA-WIN8\uffe", Corporate: "N/A", Address: "N/A", PostalCode: "N/A", City: "N/A", Country: "N/A", ProductName: null, Id: 1865074a-7139-4218-a5f4-b2fd9675f3da, IsValid: True }
+2015-09-27 19:24:36.046 +02:00 [Warning] The XSockets.NET Evaluation license will let the server run for 1 days per start, but will have all features enabled
+2015-09-27 19:24:36.048 +02:00 [Information] Get a free developer license at "http://xsockets.net/"
+2015-09-27 19:24:36.052 +02:00 [Warning] Server will shut down in 0 days 23:59:59
+2015-09-27 19:30:33.859 +02:00 [Information] License Information: LicenseTerms { LicenseType: Evaluation, Scaling: True, ConnectionLimit: -1, StartDate: 09/20/2015 19:38:52, EndDate: 10/04/2015 19:38:52, OwnerName: "MBA-WIN8\uffe", Corporate: "N/A", Address: "N/A", PostalCode: "N/A", City: "N/A", Country: "N/A", ProductName: null, Id: 2c13b8b7-3de6-4119-a3c4-521c4c747e49, IsValid: True }
+2015-09-27 19:30:33.975 +02:00 [Warning] The XSockets.NET Evaluation license will let the server run for 1 days per start, but will have all features enabled
+2015-09-27 19:30:33.981 +02:00 [Information] Get a free developer license at "http://xsockets.net/"
+2015-09-27 19:30:33.996 +02:00 [Warning] Server will shut down in 0 days 23:59:59
+2015-09-27 19:30:36.202 +02:00 [Information] Server starting at 09/27/2015 19:30:36 with interceptors True
+2015-09-27 19:30:36.281 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:30:36.302 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:30:36.316 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:30:36.339 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:31:36.396 +02:00 [Information] License Information: LicenseTerms { LicenseType: Evaluation, Scaling: True, ConnectionLimit: -1, StartDate: 09/20/2015 19:38:52, EndDate: 10/04/2015 19:38:52, OwnerName: "MBA-WIN8\uffe", Corporate: "N/A", Address: "N/A", PostalCode: "N/A", City: "N/A", Country: "N/A", ProductName: null, Id: f45fbd0b-8712-4f66-aebc-1749883653d7, IsValid: True }
+2015-09-27 19:31:36.462 +02:00 [Warning] The XSockets.NET Evaluation license will let the server run for 1 days per start, but will have all features enabled
+2015-09-27 19:31:36.468 +02:00 [Information] Get a free developer license at "http://xsockets.net/"
+2015-09-27 19:31:36.477 +02:00 [Warning] Server will shut down in 0 days 23:59:59
+2015-09-27 19:31:36.486 +02:00 [Information] Server starting at 09/27/2015 19:31:36 with interceptors True
+2015-09-27 19:31:36.526 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:31:36.531 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:31:36.537 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:31:36.546 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:32:12.256 +02:00 [Error] InvokePluginMethod<T>. Data passed to controller "photon" and method "SetClientInfo" with data "\"{ \\"Lat\\":\\"47.367347\\",\\"Lng\\":\\"8.5500025\\",\\"Name\\":\\"Zurich\\",\\"Organization\\":\\"Team XSockets.NET\\" }\""
+Newtonsoft.Json.JsonSerializationException: Error converting value "{ "Lat":"47.367347","Lng":"8.5500025","Name":"Zurich","Organization":"Team XSockets.NET" }" to type 'HackZurich.Modules.Model.ClientInfo'. Path '', line 1, position 108. ---> System.ArgumentException: Could not cast or convert from System.String to HackZurich.Modules.Model.ClientInfo.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at XSockets.Serialization.XSocketJsonSerializer.DeserializeFromString(String json, Type type)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.ExtractMethodParameters(ParameterInfo[] parameterInfo, IXSocketController controller, String json)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.<InvokePluginMethod>d__98`1.MoveNext()
+2015-09-27 19:32:13.076 +02:00 [Error] InvokePluginMethod<T>. Data passed to controller "photon" and method "OnWeatherData" with data "\"{ \\"Humidity\\":\\"45.246643\\",\\"Temperature\\":\\"25.447882\\" }\""
+Newtonsoft.Json.JsonSerializationException: Error converting value "{ "Humidity":"45.246643","Temperature":"25.447882" }" to type 'HackZurich.Modules.Model.WeatherData'. Path '', line 1, position 62. ---> System.ArgumentException: Could not cast or convert from System.String to HackZurich.Modules.Model.WeatherData.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at XSockets.Serialization.XSocketJsonSerializer.DeserializeFromString(String json, Type type)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.ExtractMethodParameters(ParameterInfo[] parameterInfo, IXSocketController controller, String json)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.<InvokePluginMethod>d__98`1.MoveNext()
+2015-09-27 19:32:14.257 +02:00 [Error] InvokePluginMethod<T>. Data passed to controller "photon" and method "OnWeatherData" with data "\"{ \\"Humidity\\":\\"45.223755\\",\\"Temperature\\":\\"25.447882\\" }\""
+Newtonsoft.Json.JsonSerializationException: Error converting value "{ "Humidity":"45.223755","Temperature":"25.447882" }" to type 'HackZurich.Modules.Model.WeatherData'. Path '', line 1, position 62. ---> System.ArgumentException: Could not cast or convert from System.String to HackZurich.Modules.Model.WeatherData.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at XSockets.Serialization.XSocketJsonSerializer.DeserializeFromString(String json, Type type)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.ExtractMethodParameters(ParameterInfo[] parameterInfo, IXSocketController controller, String json)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.<InvokePluginMethod>d__98`1.MoveNext()
+2015-09-27 19:32:15.341 +02:00 [Error] InvokePluginMethod<T>. Data passed to controller "photon" and method "OnWeatherData" with data "\"{ \\"Humidity\\":\\"45.216125\\",\\"Temperature\\":\\"25.437155\\" }\""
+Newtonsoft.Json.JsonSerializationException: Error converting value "{ "Humidity":"45.216125","Temperature":"25.437155" }" to type 'HackZurich.Modules.Model.WeatherData'. Path '', line 1, position 62. ---> System.ArgumentException: Could not cast or convert from System.String to HackZurich.Modules.Model.WeatherData.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at XSockets.Serialization.XSocketJsonSerializer.DeserializeFromString(String json, Type type)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.ExtractMethodParameters(ParameterInfo[] parameterInfo, IXSocketController controller, String json)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.<InvokePluginMethod>d__98`1.MoveNext()
+2015-09-27 19:32:16.428 +02:00 [Error] InvokePluginMethod<T>. Data passed to controller "photon" and method "OnWeatherData" with data "\"{ \\"Humidity\\":\\"45.216125\\",\\"Temperature\\":\\"25.437155\\" }\""
+Newtonsoft.Json.JsonSerializationException: Error converting value "{ "Humidity":"45.216125","Temperature":"25.437155" }" to type 'HackZurich.Modules.Model.WeatherData'. Path '', line 1, position 62. ---> System.ArgumentException: Could not cast or convert from System.String to HackZurich.Modules.Model.WeatherData.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at XSockets.Serialization.XSocketJsonSerializer.DeserializeFromString(String json, Type type)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.ExtractMethodParameters(ParameterInfo[] parameterInfo, IXSocketController controller, String json)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.<InvokePluginMethod>d__98`1.MoveNext()
+2015-09-27 19:32:17.506 +02:00 [Error] InvokePluginMethod<T>. Data passed to controller "photon" and method "OnWeatherData" with data "\"{ \\"Humidity\\":\\"45.208496\\",\\"Temperature\\":\\"25.447882\\" }\""
+Newtonsoft.Json.JsonSerializationException: Error converting value "{ "Humidity":"45.208496","Temperature":"25.447882" }" to type 'HackZurich.Modules.Model.WeatherData'. Path '', line 1, position 62. ---> System.ArgumentException: Could not cast or convert from System.String to HackZurich.Modules.Model.WeatherData.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at XSockets.Serialization.XSocketJsonSerializer.DeserializeFromString(String json, Type type)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.ExtractMethodParameters(ParameterInfo[] parameterInfo, IXSocketController controller, String json)
+   at XSockets.Core.XSocket.Helpers.XSocketHelper.<InvokePluginMethod>d__98`1.MoveNext()
+2015-09-27 19:32:30.895 +02:00 [Information] License Information: LicenseTerms { LicenseType: Evaluation, Scaling: True, ConnectionLimit: -1, StartDate: 09/20/2015 19:38:52, EndDate: 10/04/2015 19:38:52, OwnerName: "MBA-WIN8\uffe", Corporate: "N/A", Address: "N/A", PostalCode: "N/A", City: "N/A", Country: "N/A", ProductName: null, Id: 07d041ba-19bd-4d23-8a81-ef24203e70af, IsValid: True }
+2015-09-27 19:32:30.945 +02:00 [Warning] The XSockets.NET Evaluation license will let the server run for 1 days per start, but will have all features enabled
+2015-09-27 19:32:30.947 +02:00 [Information] Get a free developer license at "http://xsockets.net/"
+2015-09-27 19:32:30.950 +02:00 [Warning] Server will shut down in 0 days 23:59:59
+2015-09-27 19:32:30.957 +02:00 [Information] Server starting at 09/27/2015 19:32:30 with interceptors True
+2015-09-27 19:32:30.983 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:32:30.988 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:32:30.993 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:32:31.002 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:35:03.840 +02:00 [Information] License Information: LicenseTerms { LicenseType: Evaluation, Scaling: True, ConnectionLimit: -1, StartDate: 09/20/2015 19:38:52, EndDate: 10/04/2015 19:38:52, OwnerName: "MBA-WIN8\uffe", Corporate: "N/A", Address: "N/A", PostalCode: "N/A", City: "N/A", Country: "N/A", ProductName: null, Id: fcf63e2b-dc23-4860-9c85-50fbc31bebe9, IsValid: True }
+2015-09-27 19:35:03.876 +02:00 [Warning] The XSockets.NET Evaluation license will let the server run for 1 days per start, but will have all features enabled
+2015-09-27 19:35:03.878 +02:00 [Information] Get a free developer license at "http://xsockets.net/"
+2015-09-27 19:35:03.882 +02:00 [Warning] Server will shut down in 0 days 23:59:59
+2015-09-27 19:35:03.888 +02:00 [Information] Server starting at 09/27/2015 19:35:03 with interceptors True
+2015-09-27 19:35:03.911 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:35:03.915 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:35:03.919 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:35:03.927 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:37:21.726 +02:00 [Error] VerifyController
+System.NotImplementedException: The controller name was not found in loaded plugins
+2015-09-27 19:38:36.269 +02:00 [Information] License Information: LicenseTerms { LicenseType: Evaluation, Scaling: True, ConnectionLimit: -1, StartDate: 09/20/2015 19:38:52, EndDate: 10/04/2015 19:38:52, OwnerName: "MBA-WIN8\uffe", Corporate: "N/A", Address: "N/A", PostalCode: "N/A", City: "N/A", Country: "N/A", ProductName: null, Id: ac1b42c7-94c3-4462-9709-3a53b69110d0, IsValid: True }
+2015-09-27 19:38:36.313 +02:00 [Warning] The XSockets.NET Evaluation license will let the server run for 1 days per start, but will have all features enabled
+2015-09-27 19:38:36.315 +02:00 [Information] Get a free developer license at "http://xsockets.net/"
+2015-09-27 19:38:36.320 +02:00 [Warning] Server will shut down in 0 days 23:59:59
+2015-09-27 19:38:36.340 +02:00 [Information] Server starting at 09/27/2015 19:38:36 with interceptors True
+2015-09-27 19:38:36.367 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:38:36.372 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:38:36.376 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:38:36.384 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:39:27.098 +02:00 [Information] License Information: LicenseTerms { LicenseType: Evaluation, Scaling: True, ConnectionLimit: -1, StartDate: 09/20/2015 19:38:52, EndDate: 10/04/2015 19:38:52, OwnerName: "MBA-WIN8\uffe", Corporate: "N/A", Address: "N/A", PostalCode: "N/A", City: "N/A", Country: "N/A", ProductName: null, Id: ecbad0fa-8884-4e55-8955-62d3200c070a, IsValid: True }
+2015-09-27 19:39:27.137 +02:00 [Warning] The XSockets.NET Evaluation license will let the server run for 1 days per start, but will have all features enabled
+2015-09-27 19:39:27.139 +02:00 [Information] Get a free developer license at "http://xsockets.net/"
+2015-09-27 19:39:27.142 +02:00 [Warning] Server will shut down in 0 days 23:59:59
+2015-09-27 19:39:27.155 +02:00 [Information] Server starting at 09/27/2015 19:39:27 with interceptors True
+2015-09-27 19:39:27.179 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:39:27.185 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:39:27.189 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:39:27.197 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:55:35.045 +02:00 [Information] License Information: LicenseTerms { LicenseType: Evaluation, Scaling: True, ConnectionLimit: -1, StartDate: 09/20/2015 19:38:52, EndDate: 10/04/2015 19:38:52, OwnerName: "MBA-WIN8\uffe", Corporate: "N/A", Address: "N/A", PostalCode: "N/A", City: "N/A", Country: "N/A", ProductName: null, Id: 34d31a2b-d11b-4330-8a86-faee8ab723fb, IsValid: True }
+2015-09-27 19:55:35.101 +02:00 [Warning] The XSockets.NET Evaluation license will let the server run for 1 days per start, but will have all features enabled
+2015-09-27 19:55:35.102 +02:00 [Information] Get a free developer license at "http://xsockets.net/"
+2015-09-27 19:55:35.106 +02:00 [Warning] Server will shut down in 0 days 23:59:59
+2015-09-27 19:55:35.116 +02:00 [Information] Server starting at 09/27/2015 19:55:35 with interceptors True
+2015-09-27 19:55:35.142 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:55:35.145 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:55:35.149 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:55:35.156 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:57:03.944 +02:00 [Information] License Information: LicenseTerms { LicenseType: Evaluation, Scaling: True, ConnectionLimit: -1, StartDate: 09/20/2015 19:38:52, EndDate: 10/04/2015 19:38:52, OwnerName: "MBA-WIN8\uffe", Corporate: "N/A", Address: "N/A", PostalCode: "N/A", City: "N/A", Country: "N/A", ProductName: null, Id: 3661cad8-fe5a-4282-8dc3-51f576061a70, IsValid: True }
+2015-09-27 19:57:03.983 +02:00 [Warning] The XSockets.NET Evaluation license will let the server run for 1 days per start, but will have all features enabled
+2015-09-27 19:57:03.984 +02:00 [Information] Get a free developer license at "http://xsockets.net/"
+2015-09-27 19:57:03.988 +02:00 [Warning] Server will shut down in 0 days 23:59:59
+2015-09-27 19:57:03.993 +02:00 [Information] Server starting at 09/27/2015 19:57:03 with interceptors True
+2015-09-27 19:57:04.017 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:57:04.022 +02:00 [Information] "Auto Configuration" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 0, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:57:04.026 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "192.168.254.154", Port: 4502, IsLoopback: False, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:57:04.035 +02:00 [Information] "Starting Endpoint with" { Origin: ["*"], Host: "127.0.0.1", Port: 4502, IsLoopback: True, IsSecure: False, BacklogSize: 100, ThreadPoolSize: 1000, CompletionPortThreads: 2, Certificate: null, CertificateLocation: LocalMachine, CertificateSubjectDistinguishedName: "cn=localhost", ForceClientCertificate: False }
+2015-09-27 19:57:05.915 +02:00 [Verbose] ProtocolHandshakeHandler - Reading Handshake
+2015-09-27 19:57:05.961 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Identified "PhotonProtocol"
+2015-09-27 19:57:05.977 +02:00 [Verbose] ProtocolHandshakeHandler - Protocol Resolved
+2015-09-27 19:57:05.981 +02:00 [Verbose] ProtocolHandshakeHandler - Handshake OK!
+2015-09-27 19:57:06.013 +02:00 [Verbose] New Connection { User: null, CookieCollection: [], Headers: [], IsAuthenticated: False, IsSecureConnection: False, Origin: null, PersistentId: 230dbdc6-4f0d-4c83-bc5a-bbec3e1e0a7e, QueryString: ["PersistentId"], RawHandshake: null, Reconnecting: True, RequestUri: ws://192.168.254.26/PhotonProtocol?PersistentId=230DBDC6-4F0D-4C83-BC5A-BBEC3E1E0A7E }
+2015-09-27 19:57:06.028 +02:00 [Verbose] Authenticaiton pipeline, GetPrincipal
+2015-09-27 19:57:06.041 +02:00 [Verbose] Start reading from socket
+2015-09-27 19:57:06.047 +02:00 [Verbose] Reading from socket
+2015-09-27 19:57:06.298 +02:00 [Verbose] Reading from socket
+2015-09-27 19:57:06.454 +02:00 [Verbose] Frame Ready, type: Text
+2015-09-27 19:57:06.513 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{ \\"Lat\\":\\"47.367347\\",\\"Lng\\":\\"8.5500025\\",\\"Name\\":\\"Zurich\\",\\"Organization\\":\\"Team XSockets.NET\\" }\",\"C\":\"photon\",\"T\":\"ci\"}"
+2015-09-27 19:57:06.609 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{ \"Lat\":\"47.367347\",\"Lng\":\"8.5500025\",\"Name\":\"Zurich\",\"Organization\":\"Team XSockets.NET\" }", MessageType: Text, Controller: "photon", Topic: "ci" }
+2015-09-27 19:57:06.629 +02:00 [Verbose] Pipeline Outgoing: Message { Blob: null, Data: "{\"CI\":\"feedfb9b-ce01-4ba7-9652-237059a3d859\",\"PI\":\"230dbdc6-4f0d-4c83-bc5a-bbec3e1e0a7e\",\"C\":\"photon\"}", MessageType: Text, Controller: "photon", Topic: "2" }
+2015-09-27 19:57:06.661 +02:00 [Verbose] Controller open "photon" for context { User: null, CookieCollection: [], Headers: [], IsAuthenticated: False, IsSecureConnection: False, Origin: null, PersistentId: 230dbdc6-4f0d-4c83-bc5a-bbec3e1e0a7e, QueryString: ["PersistentId"], RawHandshake: null, Reconnecting: True, RequestUri: ws://192.168.254.26/PhotonProtocol?PersistentId=230DBDC6-4F0D-4C83-BC5A-BBEC3E1E0A7E }
+2015-09-27 19:57:06.670 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "{ \"Lat\":\"47.367347\",\"Lng\":\"8.5500025\",\"Name\":\"Zurich\",\"Organization\":\"Team XSockets.NET\" }", MessageType: Text, Controller: "photon", Topic: "ci" }
+2015-09-27 19:57:06.688 +02:00 [Verbose] ScaleOut: Direction : In, Message : "{\"D\":\"{ \\"Lat\\":\\"47.367347\\",\\"Lng\\":\\"8.5500025\\",\\"Name\\":\\"Zurich\\",\\"Organization\\":\\"Team XSockets.NET\\" }\",\"C\":\"photon\",\"T\":\"ci\"}", Origin : Auto
+2015-09-27 19:57:06.692 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"{ \\"Lat\\":\\"47.367347\\",\\"Lng\\":\\"8.5500025\\",\\"Name\\":\\"Zurich\\",\\"Organization\\":\\"Team XSockets.NET\\" }\",\"C\":\"photon\",\"T\":\"ci\"}"
+2015-09-27 19:57:06.695 +02:00 [Verbose] Frame Ready, type: Text
+2015-09-27 19:57:06.698 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{ \\"Humidity\\":\\"50.480408\\",\\"Temperature\\":\\"23.603163\\" }\",\"C\":\"photon\",\"T\":\"wd\"}"
+2015-09-27 19:57:06.701 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{ \"Humidity\":\"50.480408\",\"Temperature\":\"23.603163\" }", MessageType: Text, Controller: "photon", Topic: "wd" }
+2015-09-27 19:57:06.704 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "{ \"Humidity\":\"50.480408\",\"Temperature\":\"23.603163\" }", MessageType: Text, Controller: "photon", Topic: "wd" }
+2015-09-27 19:57:06.727 +02:00 [Verbose] ScaleOut: Direction : In, Message : "{\"D\":\"{ \\"Humidity\\":\\"50.480408\\",\\"Temperature\\":\\"23.603163\\" }\",\"C\":\"photon\",\"T\":\"wd\"}", Origin : Auto
+2015-09-27 19:57:06.732 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"{ \\"Humidity\\":\\"50.480408\\",\\"Temperature\\":\\"23.603163\\" }\",\"C\":\"photon\",\"T\":\"wd\"}"
+2015-09-27 19:57:06.737 +02:00 [Verbose] Reading from socket
+2015-09-27 19:57:07.366 +02:00 [Verbose] Reading from socket
+2015-09-27 19:57:07.416 +02:00 [Verbose] Frame Ready, type: Text
+2015-09-27 19:57:07.423 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{ \\"Humidity\\":\\"50.465149\\",\\"Temperature\\":\\"23.624617\\" }\",\"C\":\"photon\",\"T\":\"wd\"}"
+2015-09-27 19:57:07.430 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{ \"Humidity\":\"50.465149\",\"Temperature\":\"23.624617\" }", MessageType: Text, Controller: "photon", Topic: "wd" }
+2015-09-27 19:57:07.441 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "{ \"Humidity\":\"50.465149\",\"Temperature\":\"23.624617\" }", MessageType: Text, Controller: "photon", Topic: "wd" }
+2015-09-27 19:57:07.454 +02:00 [Verbose] ScaleOut: Direction : In, Message : "{\"D\":\"{ \\"Humidity\\":\\"50.465149\\",\\"Temperature\\":\\"23.624617\\" }\",\"C\":\"photon\",\"T\":\"wd\"}", Origin : Auto
+2015-09-27 19:57:07.466 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"{ \\"Humidity\\":\\"50.465149\\",\\"Temperature\\":\\"23.624617\\" }\",\"C\":\"photon\",\"T\":\"wd\"}"
+2015-09-27 19:57:07.479 +02:00 [Verbose] Reading from socket
+2015-09-27 19:57:08.444 +02:00 [Verbose] Reading from socket
+2015-09-27 19:57:08.497 +02:00 [Verbose] Frame Ready, type: Text
+2015-09-27 19:57:08.503 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{ \\"Humidity\\":\\"50.472778\\",\\"Temperature\\":\\"23.613890\\" }\",\"C\":\"photon\",\"T\":\"wd\"}"
+2015-09-27 19:57:08.512 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{ \"Humidity\":\"50.472778\",\"Temperature\":\"23.613890\" }", MessageType: Text, Controller: "photon", Topic: "wd" }
+2015-09-27 19:57:08.524 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "{ \"Humidity\":\"50.472778\",\"Temperature\":\"23.613890\" }", MessageType: Text, Controller: "photon", Topic: "wd" }
+2015-09-27 19:57:08.537 +02:00 [Verbose] ScaleOut: Direction : In, Message : "{\"D\":\"{ \\"Humidity\\":\\"50.472778\\",\\"Temperature\\":\\"23.613890\\" }\",\"C\":\"photon\",\"T\":\"wd\"}", Origin : Auto
+2015-09-27 19:57:08.547 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"{ \\"Humidity\\":\\"50.472778\\",\\"Temperature\\":\\"23.613890\\" }\",\"C\":\"photon\",\"T\":\"wd\"}"
+2015-09-27 19:57:08.555 +02:00 [Verbose] Reading from socket
+2015-09-27 19:57:09.519 +02:00 [Verbose] Reading from socket
+2015-09-27 19:57:09.580 +02:00 [Verbose] Frame Ready, type: Text
+2015-09-27 19:57:09.587 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{ \\"Humidity\\":\\"50.465149\\",\\"Temperature\\":\\"23.624617\\" }\",\"C\":\"photon\",\"T\":\"wd\"}"
+2015-09-27 19:57:09.595 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{ \"Humidity\":\"50.465149\",\"Temperature\":\"23.624617\" }", MessageType: Text, Controller: "photon", Topic: "wd" }
+2015-09-27 19:57:09.606 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "{ \"Humidity\":\"50.465149\",\"Temperature\":\"23.624617\" }", MessageType: Text, Controller: "photon", Topic: "wd" }
+2015-09-27 19:57:09.620 +02:00 [Verbose] ScaleOut: Direction : In, Message : "{\"D\":\"{ \\"Humidity\\":\\"50.465149\\",\\"Temperature\\":\\"23.624617\\" }\",\"C\":\"photon\",\"T\":\"wd\"}", Origin : Auto
+2015-09-27 19:57:09.631 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"{ \\"Humidity\\":\\"50.465149\\",\\"Temperature\\":\\"23.624617\\" }\",\"C\":\"photon\",\"T\":\"wd\"}"
+2015-09-27 19:57:09.638 +02:00 [Verbose] Reading from socket
+2015-09-27 19:57:10.596 +02:00 [Verbose] Reading from socket
+2015-09-27 19:57:10.652 +02:00 [Verbose] Frame Ready, type: Text
+2015-09-27 19:57:10.659 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{ \\"Humidity\\":\\"50.480408\\",\\"Temperature\\":\\"23.646063\\" }\",\"C\":\"photon\",\"T\":\"wd\"}"
+2015-09-27 19:57:10.667 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{ \"Humidity\":\"50.480408\",\"Temperature\":\"23.646063\" }", MessageType: Text, Controller: "photon", Topic: "wd" }
+2015-09-27 19:57:10.681 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "{ \"Humidity\":\"50.480408\",\"Temperature\":\"23.646063\" }", MessageType: Text, Controller: "photon", Topic: "wd" }
+2015-09-27 19:57:10.694 +02:00 [Verbose] ScaleOut: Direction : In, Message : "{\"D\":\"{ \\"Humidity\\":\\"50.480408\\",\\"Temperature\\":\\"23.646063\\" }\",\"C\":\"photon\",\"T\":\"wd\"}", Origin : Auto
+2015-09-27 19:57:10.704 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"{ \\"Humidity\\":\\"50.480408\\",\\"Temperature\\":\\"23.646063\\" }\",\"C\":\"photon\",\"T\":\"wd\"}"
+2015-09-27 19:57:10.714 +02:00 [Verbose] Reading from socket
+2015-09-27 19:57:11.673 +02:00 [Verbose] Reading from socket
+2015-09-27 19:57:11.731 +02:00 [Verbose] Frame Ready, type: Text
+2015-09-27 19:57:11.736 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{ \\"Humidity\\":\\"50.465149\\",\\"Temperature\\":\\"23.624617\\" }\",\"C\":\"photon\",\"T\":\"wd\"}"
+2015-09-27 19:57:11.743 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{ \"Humidity\":\"50.465149\",\"Temperature\":\"23.624617\" }", MessageType: Text, Controller: "photon", Topic: "wd" }
+2015-09-27 19:57:11.753 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "{ \"Humidity\":\"50.465149\",\"Temperature\":\"23.624617\" }", MessageType: Text, Controller: "photon", Topic: "wd" }
+2015-09-27 19:57:11.764 +02:00 [Verbose] ScaleOut: Direction : In, Message : "{\"D\":\"{ \\"Humidity\\":\\"50.465149\\",\\"Temperature\\":\\"23.624617\\" }\",\"C\":\"photon\",\"T\":\"wd\"}", Origin : Auto
+2015-09-27 19:57:11.772 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"{ \\"Humidity\\":\\"50.465149\\",\\"Temperature\\":\\"23.624617\\" }\",\"C\":\"photon\",\"T\":\"wd\"}"
+2015-09-27 19:57:11.779 +02:00 [Verbose] Reading from socket
+2015-09-27 19:57:12.750 +02:00 [Verbose] Reading from socket
+2015-09-27 19:57:12.805 +02:00 [Verbose] Frame Ready, type: Text
+2015-09-27 19:57:12.810 +02:00 [Verbose] IncomingMessage Start "{\"D\":\"{ \\"Humidity\\":\\"50.457520\\",\\"Temperature\\":\\"23.624617\\" }\",\"C\":\"photon\",\"T\":\"wd\"}"
+2015-09-27 19:57:12.815 +02:00 [Debug] VerifyController Message { Blob: null, Data: "{ \"Humidity\":\"50.457520\",\"Temperature\":\"23.624617\" }", MessageType: Text, Controller: "photon", Topic: "wd" }
+2015-09-27 19:57:12.821 +02:00 [Verbose] Pipeline Incoming: Message { Blob: null, Data: "{ \"Humidity\":\"50.457520\",\"Temperature\":\"23.624617\" }", MessageType: Text, Controller: "photon", Topic: "wd" }
+2015-09-27 19:57:12.828 +02:00 [Verbose] ScaleOut: Direction : In, Message : "{\"D\":\"{ \\"Humidity\\":\\"50.457520\\",\\"Temperature\\":\\"23.624617\\" }\",\"C\":\"photon\",\"T\":\"wd\"}", Origin : Auto
+2015-09-27 19:57:12.831 +02:00 [Verbose] IncomingMessage Done "{\"D\":\"{ \\"Humidity\\":\\"50.457520\\",\\"Temperature\\":\\"23.624617\\" }\",\"C\":\"photon\",\"T\":\"wd\"}"
+2015-09-27 19:57:12.835 +02:00 [Verbose] Reading from socket
